@@ -5,6 +5,212 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Aplicacoes": {
+      "get": {
+        "tags": [
+          "Aplicacoes"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Aplicacoes"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Aplicacoes"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Aplicacoes"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Aplicacoes"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Aplicacoes"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Aplicacoes"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Aplicacoes"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Aplicacoes"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Aplicacoes"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Aplicacoes"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Aplicacoes"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Aplicacoes/{id}": {
+      "get": {
+        "tags": [
+          "Aplicacoes"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Aplicacoes"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Aplicacoes"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Aplicacoes"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Aplicacoes"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Cliente/{empCodigo}": {
       "get": {
         "tags": [
@@ -3080,10 +3286,101 @@
           }
         }
       }
+    },
+    "/api/UsuarioFuncionario/{empresa}/{usuario}": {
+      "get": {
+        "tags": [
+          "UsuarioFuncionario"
+        ],
+        "parameters": [
+          {
+            "name": "empresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "usuario",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UsuarioFuncionario"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UsuarioFuncionario"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UsuarioFuncionario"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "Aplicacoes": {
+        "type": "object",
+        "properties": {
+          "apli_Codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "apli_Descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "apli_Tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "apli_Img": {
+            "type": "string",
+            "nullable": true
+          },
+          "apli_Mostrar_Menu": {
+            "type": "string",
+            "nullable": true
+          },
+          "apli_Desc_Curta": {
+            "type": "string",
+            "nullable": true
+          },
+          "modulo": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "Cliente": {
         "type": "object",
         "properties": {
@@ -4195,6 +4492,28 @@
           "ususenharapida": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioFuncionario": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fun_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_Codigo": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

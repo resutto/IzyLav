@@ -59,6 +59,12 @@ builder.Services.AddScoped<IUfService, UfService>();
 builder.Services.AddScoped<IUnidadeRepository, UnidadeRepository>();
 builder.Services.AddScoped<IUnidadeService, UnidadeService>();
 
+builder.Services.AddScoped<IAplicacoesRepository, AplicacoesRepository>();
+builder.Services.AddScoped<IAplicacoesService, AplicacoesService>();
+
+builder.Services.AddScoped<IUsuarioFuncionarioRepository, UsuarioFuncionarioRepository>();
+builder.Services.AddScoped<IUsuarioFuncionarioService, UsuarioFuncionarioService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

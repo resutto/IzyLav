@@ -23,7 +23,7 @@ namespace EgourmetAPI.Repository
                                               Apli_Tipo,
                                               Apli_Img,
                                               Apli_Mostrar_Menu,
-                                              Apli_Desc_Curto,
+                                              Apli_Desc_Curta,
                                               Modulo)
                                             values(
                                               @codigo,
@@ -43,7 +43,7 @@ namespace EgourmetAPI.Repository
                     tipo=obj.Apli_Tipo,
                     img=obj.Apli_Img,
                     menu=obj.Apli_Mostrar_Menu,
-                    menucurto=obj.Apli_Desc_Curto,
+                    menucurto=obj.Apli_Desc_Curta,
                     modulo=obj.Modulo
                 });
             }
@@ -63,7 +63,7 @@ namespace EgourmetAPI.Repository
                                  Apli_Tipo,
                                  Apli_Img,
                                  Apli_Mostrar_Menu,
-                                 Apli_Desc_Curto
+                                 Apli_Desc_Curta,
                                  Modulo 
                                from aplicacoes";
 
@@ -92,7 +92,7 @@ namespace EgourmetAPI.Repository
                                  Apli_Tipo,
                                  Apli_Img,
                                  Apli_Mostrar_Menu,
-                                 Apli_Desc_Curto
+                                 Apli_Desc_Curta,
                                  Modulo 
                                from aplicacoes where apli_codigo=@codigo";
 
@@ -141,7 +141,7 @@ namespace EgourmetAPI.Repository
                                               Apli_Tipo=@tipo,
                                               Apli_Img=@img,
                                               Apli_Mostrar_Menu=@menu,
-                                              Apli_Desc_Curto=@menucurto,
+                                              Apli_Desc_Curta=@menucurto,
                                               Modulo=@modulo 
                              where Apli_Codigo=@codigo";
 
@@ -155,7 +155,7 @@ namespace EgourmetAPI.Repository
                     tipo = obj.Apli_Tipo,
                     img = obj.Apli_Img,
                     menu = obj.Apli_Mostrar_Menu,
-                    menucurto = obj.Apli_Desc_Curto,
+                    menucurto = obj.Apli_Desc_Curta,
                     modulo = obj.Modulo
                 });
             }

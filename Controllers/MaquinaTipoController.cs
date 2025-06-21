@@ -39,7 +39,7 @@ namespace IzyLav.Controllers
             try
             {
                 _servico.Update(maquinatipo);
-                return Ok("Tipo da Maquina Atualizada Com Sucesso!");
+                return Ok("Tipo Atualizado Com Sucesso!");
             }
             catch (Exception ex)
             {
@@ -55,7 +55,7 @@ namespace IzyLav.Controllers
             try
             {
                 _servico.Remove(id);
-                return Ok("Tipo da Maquina Removido Com Sucesso!");
+                return Ok("Tipo Removido Com Sucesso!");
             }
             catch (Exception ex)
             {
@@ -68,7 +68,7 @@ namespace IzyLav.Controllers
             try
             {
                 _servico.Add(maquinatipo);
-                return Ok("Tipo da Maquina Adicionado Com Sucesso!");
+                return Ok("Tipo Adicionado Com Sucesso!");
             }
             catch (Exception ex)
             {

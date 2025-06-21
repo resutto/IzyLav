@@ -52,7 +52,9 @@ namespace EgourmetAPI.Repository
                 throw ex;
 
             }
-            finally { connection.Close(); }
+            finally { 
+                connection.Close(); 
+            }
         }
 
         public Unidade GetById(int id)
@@ -69,7 +71,9 @@ namespace EgourmetAPI.Repository
                 throw ex;
 
             }
-            finally { connection.Close(); }
+            finally { 
+                connection.Close(); 
+            }
         }
 
         public void Remove(int id)
