@@ -7,6 +7,6 @@ namespace EgourmetAPI.Repository.Interface
     {
         public IEnumerable<SaldoProduto> GetAll(int empresa, string produto);
         public SaldoProduto GetById(int empresa, int deposito, string produto);
-
+        public void Remove(int empresa, int deposito, string produto);
     }
 }

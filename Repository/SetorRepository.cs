@@ -1,9 +1,13 @@
 ﻿using Dapper;
-using EgourmetAPI.Model;
+using egourmetAPI.Model;
+using egourmetAPI.Repository.Interface;
+using IzyLav.Model;
 using EgourmetAPI.Repository.Interface;
 using FirebirdSql.Data.FirebirdClient;
+using IzyLav.common;
+using EgourmetAPI.Model;
 
-namespace EgourmetAPI.Repository
+namespace IzyLav.Repository
 {
     public class SetorRepository : ISetorRepository
     {
@@ -66,9 +70,10 @@ namespace EgourmetAPI.Repository
 
             try
             {
+                IdLanc que1 = Datpai.GerarIdLanc(-1,connection, "select max(set_codigo)+1 as IdLanc from setor");
                 connection.Execute(query, new
                 {
-                    codigo = obj.Set_Codigo,
+                    codigo = que1.idLanc,
                     descricao = obj.Set_Descricao
                 });
             }
@@ -128,5 +133,6 @@ namespace EgourmetAPI.Repository
                 connection.Close();
             }
         }
+
     }
 }
