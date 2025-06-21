@@ -7,6 +7,34 @@
       "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:repository\\unidaderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\common\\datpai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:common\\datpai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\controllers\\unidadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:controllers\\unidadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\controllers\\maquinatipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:controllers\\maquinatipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\services\\unidadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:services\\unidadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\services\\interface\\iunidadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:services\\interface\\iunidadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\repository\\ufrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:repository\\ufrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,14 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\services\\ufservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:services\\ufservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\controllers\\maquinatipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:controllers\\maquinatipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +58,77 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Datpai.cs",
+              "DocumentMoniker": "C:\\src\\IzyLav\\common\\Datpai.cs",
+              "RelativeDocumentMoniker": "common\\Datpai.cs",
+              "ToolTip": "C:\\src\\IzyLav\\common\\Datpai.cs",
+              "RelativeToolTip": "common\\Datpai.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAABwAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T08:17:30.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClienteRepository.cs",
+              "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\ClienteRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ClienteRepository.cs",
+              "ToolTip": "C:\\src\\IzyLav\\Repository\\ClienteRepository.cs",
+              "RelativeToolTip": "Repository\\ClienteRepository.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAADwv0oAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T08:14:30.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnidadeController.cs",
+              "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\UnidadeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UnidadeController.cs",
+              "ToolTip": "C:\\src\\IzyLav\\Controllers\\UnidadeController.cs",
+              "RelativeToolTip": "Controllers\\UnidadeController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T08:06:31.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UnidadeService.cs",
+              "DocumentMoniker": "C:\\src\\IzyLav\\Services\\UnidadeService.cs",
+              "RelativeDocumentMoniker": "Services\\UnidadeService.cs",
+              "ToolTip": "C:\\src\\IzyLav\\Services\\UnidadeService.cs",
+              "RelativeToolTip": "Services\\UnidadeService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T08:03:15.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUnidadeService.cs",
+              "DocumentMoniker": "C:\\src\\IzyLav\\Services\\Interface\\IUnidadeService.cs",
+              "RelativeDocumentMoniker": "Services\\Interface\\IUnidadeService.cs",
+              "ToolTip": "C:\\src\\IzyLav\\Services\\Interface\\IUnidadeService.cs",
+              "RelativeToolTip": "Services\\Interface\\IUnidadeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T08:02:34.031Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -48,14 +137,10 @@
               "RelativeDocumentMoniker": "Repository\\UnidadeRepository.cs",
               "ToolTip": "C:\\src\\IzyLav\\Repository\\UnidadeRepository.cs",
               "RelativeToolTip": "Repository\\UnidadeRepository.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAwwFUAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-21T07:46:18.535Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
@@ -72,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "UfController.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\UfController.cs",
               "RelativeDocumentMoniker": "Controllers\\UfController.cs",
@@ -80,25 +165,24 @@
               "RelativeToolTip": "Controllers\\UfController.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T07:27:45.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-21T07:27:45.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\src\\IzyLav\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAADwvz8AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAADwvzUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-21T07:26:48.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "UfRepository.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\UfRepository.cs",
               "RelativeDocumentMoniker": "Repository\\UfRepository.cs",
@@ -106,12 +190,11 @@
               "RelativeToolTip": "Repository\\UfRepository.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAqwDkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T07:22:19.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-21T07:22:19.383Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "UfService.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Services\\UfService.cs",
               "RelativeDocumentMoniker": "Services\\UfService.cs",
@@ -119,12 +202,11 @@
               "RelativeToolTip": "Services\\UfService.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAmwCcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T07:18:46.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-21T07:18:46.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "IUfService.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Services\\Interface\\IUfService.cs",
               "RelativeDocumentMoniker": "Services\\Interface\\IUfService.cs",
@@ -132,8 +214,7 @@
               "RelativeToolTip": "Services\\Interface\\IUfService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T03:11:23.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-21T03:11:23.595Z"
             }
           ]
         }

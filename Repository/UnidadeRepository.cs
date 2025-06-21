@@ -1,8 +1,10 @@
 ﻿using Dapper;
+using egourmetAPI.Model;
 using EgourmetAPI.Model;
 using EgourmetAPI.Repository.Interface;
 using FirebirdSql.Data.FirebirdClient;
 using FirebirdSql.Data.Services;
+using IzyLav.common;
 
 namespace EgourmetAPI.Repository
 {
@@ -20,9 +22,13 @@ namespace EgourmetAPI.Repository
         {
             string query = $@"insert into unidade(unid_codigo,unid_descricao,unid_Conver_Pc,Unid_Mask) values(@codigo,@descricao,@pecas,@mask)";
             var connection = new FbConnection(conexao);
+            connection.Open();
+            IdLanc que1 = Datpai.GerarIdLanc(-1, connection,
+                                 $@"select max(unid_codigo)+1 as idlanc from unidade ");
+
             try
             {
-                connection.Execute(query, new { codigo = obj.Unid_Codigo, descricao = obj.Unid_Descricao, pecas = obj.Unid_Conver_Pc, mask = obj.Unid_Mask });
+                connection.Execute(query, new { codigo = que1.idLanc, descricao = obj.Unid_Descricao, pecas = obj.Unid_Conver_Pc, mask = obj.Unid_Mask });
 
             }
             catch (Exception ex)

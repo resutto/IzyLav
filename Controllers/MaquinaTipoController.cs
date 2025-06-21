@@ -75,8 +75,5 @@ namespace IzyLav.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
-
-
     }
 }

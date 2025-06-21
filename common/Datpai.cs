@@ -26,7 +26,14 @@ namespace IzyLav.common
             try
             {
                 IdLanc id;
-                id = con1.Query<IdLanc>(query, new { empresa = empCodigo }).FirstOrDefault();
+                if (empCodigo == -1) //Não tem Filtro Por Empresa
+                {
+                    id = con1.Query<IdLanc>(query).FirstOrDefault();
+                }
+                else {
+                    id = con1.Query<IdLanc>(query, new { empresa = empCodigo }).FirstOrDefault();
+                }
+
                 if (id.idLanc == 0)
                 {
                     id.idLanc = 1;

@@ -56,6 +56,9 @@ builder.Services.AddScoped<IOrcamentosDetalheService, OrcamentosDetalheService>(
 builder.Services.AddScoped<IUfRepository, UfRepository>();
 builder.Services.AddScoped<IUfService, UfService>();
 
+builder.Services.AddScoped<IUnidadeRepository, UnidadeRepository>();
+builder.Services.AddScoped<IUnidadeService, UnidadeService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
