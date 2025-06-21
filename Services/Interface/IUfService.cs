@@ -5,5 +5,7 @@ namespace IzyLav.Services.Interface
 {
     public interface IUfService:IServiceBase<Uf>
     {
+        public Uf GetById(string id);
+        public void Remove(string id);
     }
 }

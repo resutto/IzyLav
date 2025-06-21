@@ -40,3 +40,4 @@ C:\src\IzyLav\bin\Debug\net9.0\Autofac.Extensions.DependencyInjection.dll
 C:\src\IzyLav\bin\Debug\net9.0\AutoMapper.dll
 C:\src\IzyLav\bin\Debug\net9.0\Dapper.dll
 C:\src\IzyLav\bin\Debug\net9.0\FirebirdSql.Data.FirebirdClient.dll
+C:\src\IzyLav\obj\Debug\net9.0\IzyLav.sourcelink.json

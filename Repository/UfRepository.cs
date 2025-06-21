@@ -16,7 +16,7 @@ namespace EgourmetAPI.Repository
         }
         public void Add(Uf obj)
         {
-            string query = $@"insert into uf(COD_UF,UF_SIGLA) values(@codigo,@descricao)";
+            string query = $@"insert into ufs(COD_UF,UF_SIGLA) values(@codigo,@descricao)";
 
             var connection = new FbConnection(conexao);
 
@@ -40,7 +40,7 @@ namespace EgourmetAPI.Repository
 
         public IEnumerable<Uf> GetAll()
         {
-            string query = $@"select COD_UF,UF_SIGLA from uf";
+            string query = $@"select COD_UF,UF_SIGLA from ufs";
 
             var connection = new FbConnection(conexao);
 
@@ -64,7 +64,7 @@ namespace EgourmetAPI.Repository
         }
         public Uf GetByUf(string id)
         {
-            string query = $@"select COD_UF,UF_SIGLA from uf where cod_uf=@codigo";
+            string query = $@"select COD_UF,UF_SIGLA from ufs where cod_uf=@codigo";
 
             var connection = new FbConnection(conexao);
 
@@ -91,7 +91,7 @@ namespace EgourmetAPI.Repository
 
         public void RemoveUf(string codigoid)
         {
-            string query = $@"delete from uf set where cod_uf=@codigo";
+            string query = $@"delete from ufs set where cod_uf=@codigo";
 
             var connection = new FbConnection(conexao);
 
@@ -115,7 +115,7 @@ namespace EgourmetAPI.Repository
 
         public void Update(Uf obj)
         {
-            string query = $@"update uf set uf_sigla=@descricao where cod_uf=@codigo";
+            string query = $@"update ufs set uf_sigla=@descricao where cod_uf=@codigo";
 
             var connection = new FbConnection(conexao);
 
