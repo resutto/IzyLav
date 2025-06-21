@@ -1,0 +1,3752 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "IzyLav",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Cliente/{empCodigo}": {
+      "get": {
+        "tags": [
+          "Cliente"
+        ],
+        "parameters": [
+          {
+            "name": "empCodigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Cliente/{id}/{empCodigo}": {
+      "get": {
+        "tags": [
+          "Cliente"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "empCodigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Cliente"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Cliente"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Cliente"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Cliente"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "empCodigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Cliente": {
+      "post": {
+        "tags": [
+          "Cliente"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Cliente"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Creditos/{id}": {
+      "get": {
+        "tags": [
+          "Creditos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Creditos"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Creditos"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Creditos"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Creditos/Livres/{empCodigo}": {
+      "get": {
+        "tags": [
+          "Creditos"
+        ],
+        "parameters": [
+          {
+            "name": "empCodigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Creditos"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Creditos"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Creditos"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Creditos/{id}/{empCodigo}/{ano}": {
+      "get": {
+        "tags": [
+          "Creditos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "empCodigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "ano",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Creditos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Creditos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Creditos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Creditos/{id}/{empCodigo}/{ano}/{maquina}": {
+      "get": {
+        "tags": [
+          "Creditos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "empCodigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "ano",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "maquina",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Empresa": {
+      "get": {
+        "tags": [
+          "Empresa"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Empresa"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Empresa"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Empresa"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Empresa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empresa"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empresa"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empresa"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Empresa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empresa"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empresa"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empresa"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Empresa/{id}": {
+      "get": {
+        "tags": [
+          "Empresa"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Empresa"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Empresa"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Empresa"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Empresa"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Funcionario/{emp_Codigo}": {
+      "get": {
+        "tags": [
+          "Funcionario"
+        ],
+        "parameters": [
+          {
+            "name": "emp_Codigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Funcionario"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Funcionario"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Funcionario"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Funcionario/{fun_Codigo}/{emp_Codigo}": {
+      "get": {
+        "tags": [
+          "Funcionario"
+        ],
+        "parameters": [
+          {
+            "name": "fun_Codigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "emp_Codigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Funcionario"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Funcionario"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Funcionario"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Funcionario": {
+      "post": {
+        "tags": [
+          "Funcionario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Funcionario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Funcionario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Funcionario"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Funcionario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Funcionario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Funcionario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Funcionario"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Funcionario/{funcionario}/{empresa}": {
+      "delete": {
+        "tags": [
+          "Funcionario"
+        ],
+        "parameters": [
+          {
+            "name": "funcionario",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "empresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Maquinas/{id}": {
+      "get": {
+        "tags": [
+          "Maquinas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Maquinas"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Maquinas"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Maquinas"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Maquinas/{id}/{empCodigo}": {
+      "get": {
+        "tags": [
+          "Maquinas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "empCodigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Maquinas"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Maquinas"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Maquinas"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Maquinas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "empCodigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Maquinas": {
+      "put": {
+        "tags": [
+          "Maquinas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Maquinas"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Maquinas"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Maquinas"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Maquinas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Maquinas"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Maquinas"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Maquinas"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MaquinasEtapas": {
+      "get": {
+        "tags": [
+          "MaquinasEtapas"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaquinasEtapas"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaquinasEtapas"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaquinasEtapas"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "MaquinasEtapas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinasEtapas"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinasEtapas"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinasEtapas"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "MaquinasEtapas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinasEtapas"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinasEtapas"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinasEtapas"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MaquinasEtapas/{id}": {
+      "get": {
+        "tags": [
+          "MaquinasEtapas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaquinasEtapas"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaquinasEtapas"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaquinasEtapas"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "MaquinasEtapas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MaquinasExecucao/{empresa}/{idCred}/{idAno}/{idLanc}": {
+      "get": {
+        "tags": [
+          "MaquinasExecucao"
+        ],
+        "parameters": [
+          {
+            "name": "empresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "idCred",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "idAno",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "idLanc",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaquinasExecucao"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaquinasExecucao"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaquinasExecucao"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MaquinasExecucao/{empresa}/{idCred}/{idAno}/{idLanc}/{Sequencial}": {
+      "get": {
+        "tags": [
+          "MaquinasExecucao"
+        ],
+        "parameters": [
+          {
+            "name": "empresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "idCred",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "idAno",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "idLanc",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Sequencial",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaquinaTipo"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaquinaTipo"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaquinaTipo"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "MaquinasExecucao"
+        ],
+        "parameters": [
+          {
+            "name": "empresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "idCred",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "idAno",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "idLanc",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Sequencial",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MaquinasExecucao": {
+      "post": {
+        "tags": [
+          "MaquinasExecucao"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinasExecucao"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinasExecucao"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinasExecucao"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "MaquinasExecucao"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinasExecucao"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinasExecucao"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinasExecucao"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MaquinaTipo": {
+      "get": {
+        "tags": [
+          "MaquinaTipo"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaquinaTipo"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaquinaTipo"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaquinaTipo"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "MaquinaTipo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinaTipo"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinaTipo"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinaTipo"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "MaquinaTipo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinaTipo"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinaTipo"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaquinaTipo"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MaquinaTipo/{id}": {
+      "get": {
+        "tags": [
+          "MaquinaTipo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaquinaTipo"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaquinaTipo"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaquinaTipo"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "MaquinaTipo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Orcamentos/{empresa}": {
+      "get": {
+        "tags": [
+          "Orcamentos"
+        ],
+        "parameters": [
+          {
+            "name": "empresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Orcamentos"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Orcamentos"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Orcamentos"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Orcamentos/{empresa}/{orcCodigo}/{ano}": {
+      "get": {
+        "tags": [
+          "Orcamentos"
+        ],
+        "parameters": [
+          {
+            "name": "empresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "orcCodigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "ano",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Orcamentos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Orcamentos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Orcamentos"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Orcamentos"
+        ],
+        "parameters": [
+          {
+            "name": "empresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "orcCodigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "ano",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Orcamentos": {
+      "post": {
+        "tags": [
+          "Orcamentos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Orcamentos"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Orcamentos"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Orcamentos"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Orcamentos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Orcamentos"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Orcamentos"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Orcamentos"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/OrcamentosDetalhe/{empresa}/{orcamento}/{ano}": {
+      "get": {
+        "tags": [
+          "OrcamentosDetalhe"
+        ],
+        "parameters": [
+          {
+            "name": "empresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "orcamento",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "ano",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrcamentosDetalheIEnumerator"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrcamentosDetalheIEnumerator"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrcamentosDetalheIEnumerator"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/OrcamentosDetalhe/{empresa}/{orcamento}/{ano}/{detalhe}": {
+      "get": {
+        "tags": [
+          "OrcamentosDetalhe"
+        ],
+        "parameters": [
+          {
+            "name": "empresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "orcamento",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "ano",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "detalhe",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrcamentosDetalhe"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrcamentosDetalhe"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrcamentosDetalhe"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OrcamentosDetalhe"
+        ],
+        "parameters": [
+          {
+            "name": "empresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "orcamento",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "ano",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "detalhe",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/OrcamentosDetalhe": {
+      "post": {
+        "tags": [
+          "OrcamentosDetalhe"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrcamentosDetalhe"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrcamentosDetalhe"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrcamentosDetalhe"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OrcamentosDetalhe"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrcamentosDetalhe"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrcamentosDetalhe"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrcamentosDetalhe"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuario/{emp_Codigo}": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "emp_Codigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuario/{userId}/{emp_Codigo}": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "emp_Codigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "emp_Codigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuario": {
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Usuario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Cliente": {
+        "type": "object",
+        "properties": {
+          "emp_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cli_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cli_Nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Razao_Social": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Data_Cadastro": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "cli_responsavel": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Sexo": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Data_Nascimento": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "cli_CpfCnpj": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Tipopessoa": {
+            "type": "string",
+            "nullable": true
+          },
+          "indicadorIEDestinatario": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Cep": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Endereco": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Numero": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Bairro": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Cidade": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Uf": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Referencia": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Compl": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Telefone": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Telefone2": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Telefone3": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Home_Page": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Email": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Email_Xml": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Observacoes": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Anotacoes": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Inscricao_Estadual": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Inscricao_Municipal": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Inscricao_Suframa": {
+            "type": "string",
+            "nullable": true
+          },
+          "fantasiasem": {
+            "type": "string",
+            "nullable": true
+          },
+          "razsocsem": {
+            "type": "string",
+            "nullable": true
+          },
+          "desabilitado": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Creditos": {
+        "type": "object",
+        "properties": {
+          "emp_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idCredito": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idAno": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataOperacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "horaOperacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "idcredito_Anterior": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idano_Anterior": {
+            "type": "string",
+            "nullable": true
+          },
+          "valor": {
+            "type": "number",
+            "format": "float"
+          },
+          "condic_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cli_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idLanc": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "logFrame": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Empresa": {
+        "type": "object",
+        "properties": {
+          "emp_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emp_Nome_Fantasia": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_Razao_Social": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_Cgc": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_inscricao_Estadual": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_Endereco": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_Bairro": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_Cidade": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_Uf": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_Cep": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_Telefone": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_Email": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_numero": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_Complemento": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_Www": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_Logotipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_Inscricao_Municipal": {
+            "type": "string",
+            "nullable": true
+          },
+          "cfop_Codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "cnaefiscal": {
+            "type": "string",
+            "nullable": true
+          },
+          "regime": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "inscricao_Suframa": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Funcionario": {
+        "type": "object",
+        "properties": {
+          "emp_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "set_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fun_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cargo_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fun_Nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Rg": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Cpf": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Carteira_Profissional": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Habilitacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Cep": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Endereco": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Bairro": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Numero": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Uf": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Cidade": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Compl": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Telefone": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Data_Nascimento": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fun_Sexo": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Comissao": {
+            "type": "number",
+            "format": "float"
+          },
+          "fun_Observacoes": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Imagem_Foto": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Email": {
+            "type": "string",
+            "nullable": true
+          },
+          "ativo": {
+            "type": "string",
+            "nullable": true
+          },
+          "eh_Vendedor": {
+            "type": "string",
+            "nullable": true
+          },
+          "fun_Foto": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MaquinaTipo": {
+        "type": "object",
+        "properties": {
+          "idTipo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Maquinas": {
+        "type": "object",
+        "properties": {
+          "emp_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idMaquina": {
+            "type": "string",
+            "nullable": true
+          },
+          "nomeMaquina": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoMaquina": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "funcaoLavar": {
+            "type": "string",
+            "nullable": true
+          },
+          "funcaoSecar": {
+            "type": "string",
+            "nullable": true
+          },
+          "trabalhando": {
+            "type": "string",
+            "nullable": true
+          },
+          "bloqueada": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MaquinasEtapas": {
+        "type": "object",
+        "properties": {
+          "idEtapa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "duracaoEtapaMinutos": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "duracaoEtapaSegudos": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MaquinasExecucao": {
+        "type": "object",
+        "properties": {
+          "emp_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idCredito": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idAno": {
+            "type": "string",
+            "nullable": true
+          },
+          "idLanc": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sequencial": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idMaquina": {
+            "type": "string",
+            "nullable": true
+          },
+          "idEtapa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dtInicioExecucao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dtFinalExecucao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Orcamentos": {
+        "type": "object",
+        "properties": {
+          "emp_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orc_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orc_Ano": {
+            "type": "string",
+            "nullable": true
+          },
+          "conta_Codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "condic_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "trans_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orc_Data": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fun_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cli_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orc_Data_Confirmacao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "orc_Subtotal": {
+            "type": "number",
+            "format": "float"
+          },
+          "orc_Observacoes": {
+            "type": "string",
+            "nullable": true
+          },
+          "orc_Total": {
+            "type": "number",
+            "format": "float"
+          },
+          "orc_Desconto": {
+            "type": "number",
+            "format": "float"
+          },
+          "orc_Totitems": {
+            "type": "number",
+            "format": "float"
+          },
+          "orc_Qdeparcelas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orc_Notafical": {
+            "type": "string",
+            "nullable": true
+          },
+          "orc_Imposto": {
+            "type": "number",
+            "format": "float"
+          },
+          "cfop": {
+            "type": "string",
+            "nullable": true
+          },
+          "cancelado": {
+            "type": "string",
+            "nullable": true
+          },
+          "formpgto_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mov_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "preorc_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orc_Dt_Cancela": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "orc_Data_Emissao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "orc_Data_Saida": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "orc_Pdv": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orc_Totprod": {
+            "type": "number",
+            "format": "float"
+          },
+          "orc_Totserv": {
+            "type": "number",
+            "format": "float"
+          },
+          "orc_Vlriss": {
+            "type": "number",
+            "format": "float"
+          },
+          "orc_Vlrpis": {
+            "type": "number",
+            "format": "float"
+          },
+          "orc_Vlrcofins": {
+            "type": "number",
+            "format": "float"
+          },
+          "orc_VlrIrrf": {
+            "type": "number",
+            "format": "float"
+          },
+          "orc_Vlrinss": {
+            "type": "number",
+            "format": "float"
+          },
+          "orc_Vlrcsll": {
+            "type": "number",
+            "format": "float"
+          },
+          "orc_Memnota": {
+            "type": "string",
+            "nullable": true
+          },
+          "orc_Pedido": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "remessa": {
+            "type": "string",
+            "nullable": true
+          },
+          "entreg_Endereco": {
+            "type": "string",
+            "nullable": true
+          },
+          "entreg_Numero": {
+            "type": "string",
+            "nullable": true
+          },
+          "entreg_Bairro": {
+            "type": "string",
+            "nullable": true
+          },
+          "entreg_Cidade": {
+            "type": "string",
+            "nullable": true
+          },
+          "entreg_Uf": {
+            "type": "string",
+            "nullable": true
+          },
+          "entreg_Fone1": {
+            "type": "string",
+            "nullable": true
+          },
+          "entreg_Fone2": {
+            "type": "string",
+            "nullable": true
+          },
+          "entreG_Cep": {
+            "type": "string",
+            "nullable": true
+          },
+          "entreg_Ref": {
+            "type": "string",
+            "nullable": true
+          },
+          "entreg_Contato": {
+            "type": "string",
+            "nullable": true
+          },
+          "entreg_Local": {
+            "type": "string",
+            "nullable": true
+          },
+          "entreg_Compl": {
+            "type": "string",
+            "nullable": true
+          },
+          "entreg_Referencia": {
+            "type": "string",
+            "nullable": true
+          },
+          "condic_Obs": {
+            "type": "string",
+            "nullable": true
+          },
+          "liberado": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "orc_Contato": {
+            "type": "string",
+            "nullable": true
+          },
+          "dtentrega": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dtcancelado": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "hrcancelado": {
+            "type": "string",
+            "nullable": true
+          },
+          "orc_Notafiscal": {
+            "type": "string",
+            "nullable": true
+          },
+          "orc_Nfserie": {
+            "type": "string",
+            "nullable": true
+          },
+          "nfse": {
+            "type": "string",
+            "nullable": true
+          },
+          "file_Xml_Nfe": {
+            "type": "string",
+            "nullable": true
+          },
+          "dt_Envio_Xml": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "file_Xml_Cancelado": {
+            "type": "string",
+            "nullable": true
+          },
+          "dt_Cancelamento_Nfe": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "hora_Abertura": {
+            "type": "string",
+            "nullable": true
+          },
+          "orc_Data_Hora": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "orc_Fim_Hora": {
+            "type": "string",
+            "nullable": true
+          },
+          "seq": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "perc_Comissao": {
+            "type": "number",
+            "format": "float"
+          },
+          "vlr_Comissao": {
+            "type": "number",
+            "format": "float"
+          },
+          "vlr_Acrescimo": {
+            "type": "number",
+            "format": "float"
+          },
+          "perc_Desconto": {
+            "type": "number",
+            "format": "float"
+          },
+          "mesa": {
+            "type": "string",
+            "nullable": true
+          },
+          "orc_Hrultimo_Atendimento": {
+            "type": "string",
+            "nullable": true
+          },
+          "numero_Nfce": {
+            "type": "string",
+            "nullable": true
+          },
+          "serie_Nfce": {
+            "type": "string",
+            "nullable": true
+          },
+          "orc_Notafiscal_Serie": {
+            "type": "string",
+            "nullable": true
+          },
+          "totaproxtributo": {
+            "type": "number",
+            "format": "float"
+          },
+          "inscricaoestadual": {
+            "type": "string",
+            "nullable": true
+          },
+          "emissorinscricaoestadual": {
+            "type": "string",
+            "nullable": true
+          },
+          "pc_Criou": {
+            "type": "string",
+            "nullable": true
+          },
+          "via": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pc_Encerrou": {
+            "type": "string",
+            "nullable": true
+          },
+          "nfe_Tp_Doc": {
+            "type": "string",
+            "nullable": true
+          },
+          "nfe_Doc": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OrcamentosDetalhe": {
+        "type": "object",
+        "properties": {
+          "emp_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orc_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "detorc_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cli_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orC_Ano": {
+            "type": "string",
+            "nullable": true
+          },
+          "unid_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pro_Codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "detorc_Qtde": {
+            "type": "number",
+            "format": "float"
+          },
+          "detorc_Custotot": {
+            "type": "number",
+            "format": "float"
+          },
+          "detorc_Custo": {
+            "type": "number",
+            "format": "float"
+          },
+          "detorc_Observacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "data_Impressao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "infadicional": {
+            "type": "string",
+            "nullable": true
+          },
+          "data_Pedido_Web": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "data_Cofirmacao_Web": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fun_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "data_Cadastro": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "seqproducao": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mercadoria_Produzida": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuario_Producao": {
+            "type": "string",
+            "nullable": true
+          },
+          "mercadoria_Entregue": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuario_Entrega": {
+            "type": "string",
+            "nullable": true
+          },
+          "totaproxtributoitem": {
+            "type": "number",
+            "format": "float"
+          },
+          "dep_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "impressaoavulsa": {
+            "type": "string",
+            "nullable": true
+          },
+          "cst_Icms": {
+            "type": "string",
+            "nullable": true
+          },
+          "perc_Icms": {
+            "type": "number",
+            "format": "float"
+          },
+          "cst_Ipi": {
+            "type": "string",
+            "nullable": true
+          },
+          "perc_Ipi": {
+            "type": "number",
+            "format": "float"
+          },
+          "cst_Pis": {
+            "type": "string",
+            "nullable": true
+          },
+          "perc_Pis": {
+            "type": "number",
+            "format": "float"
+          },
+          "cst_Cofins": {
+            "type": "string",
+            "nullable": true
+          },
+          "perc_Cofins": {
+            "type": "number",
+            "format": "float"
+          },
+          "hora_Confirmacao_Web": {
+            "type": "string",
+            "nullable": true
+          },
+          "detorc_Desconto": {
+            "type": "number",
+            "format": "float"
+          },
+          "via": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pc_Criou": {
+            "type": "string",
+            "nullable": true
+          },
+          "qdecasas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "data_Impressao_Avulso": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idmotivodeson": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vicmsdeson": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "OrcamentosDetalheIEnumerator": {
+        "type": "object",
+        "properties": {
+          "current": {
+            "$ref": "#/components/schemas/OrcamentosDetalhe"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Usuario": {
+        "type": "object",
+        "properties": {
+          "emp_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioCodigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "grup_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ususenha": {
+            "type": "string",
+            "nullable": true
+          },
+          "usulogon": {
+            "type": "string",
+            "nullable": true
+          },
+          "ususenhaweb": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuarioweb": {
+            "type": "string",
+            "nullable": true
+          },
+          "ususenharapida": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
