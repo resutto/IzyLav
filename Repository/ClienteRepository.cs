@@ -14,8 +14,6 @@ namespace EgourmetAPI.Repository
 {
     public class ClienteRepository : IClienteRepository
     {
-
-
         private IConfiguration _configuracoes;
         string conexao { get { return _configuracoes.GetConnectionString("firedb"); } }
 

@@ -1,7 +1,9 @@
 ﻿using Dapper;
+using egourmetAPI.Model;
 using EgourmetAPI.Model;
 using EgourmetAPI.Repository.Interface;
 using FirebirdSql.Data.FirebirdClient;
+using IzyLav.common;
 using Model;
 
 namespace EgourmetAPI.Repository
@@ -21,7 +23,7 @@ namespace EgourmetAPI.Repository
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Produto> GetAll()
+        public IEnumerable<Produto> GetAll(int empCodigo)
         {
             string query = $@" select  
                         Pro_Codigo,
@@ -82,14 +84,13 @@ namespace EgourmetAPI.Repository
                         itemservico,
                         pro_dtvalidade,
                         dtalter,  
-                        dtsinc,
-                        deposito_codigo from produto ";
+                        dtsinc from produto where emp_codigo=@empresa";
 
             var connection = new FbConnection(conexao);
 
             try
             {
-               return connection.Query<Produto>(query).ToList();
+               return connection.Query<Produto>(query, new {empresa=empCodigo}).ToList();
 
             } catch (Exception ex) {
 
@@ -170,8 +171,7 @@ namespace EgourmetAPI.Repository
                         itemservico,
                         pro_dtvalidade,
                         dtalter,  
-                        dtsinc,
-                        deposito_codigo from produto where emp_codigo=@empresa and pro_codigo=@produto";
+                        dtsinc from produto where emp_codigo=@empresa and pro_codigo=@produto";
 
             var connection = new FbConnection(conexao);
             try
@@ -190,14 +190,13 @@ namespace EgourmetAPI.Repository
             throw new NotImplementedException();
         }
 
-        public void RemoveProduto(Produto produto)
+        public void RemoveProduto(string produto, int empresa)
         {
             string query = $@"delete from produto where emp_codigo=@empresa and pro_codigo=@pro_codigo";
             using var connection = new FbConnection(conexao);
-
             try
             {
-                connection.Query(query, new { empresa = produto.Emp_Codigo, pro_codigo = produto.Pro_Codigo });
+                connection.Execute(query, new { empresa = empresa, pro_codigo = produto });
             }
             catch (Exception e)
             {
@@ -256,8 +255,7 @@ namespace EgourmetAPI.Repository
                         pro_perc_pis=@pro_perc_pis,
                         pro_cst_cofins=@pro_cst_cofins,
                         pro_perc_cofins=@pro_perc_cofins,
-                        itemservico=@itemservico,
-                        deposito_codigo=@deposito_codigo
+                        itemservico=@itemservico
                     where
                         Pro_Codigo=@Pro_Codigo and 
                         emp_codigo=@emp_codigo ";
@@ -310,7 +308,6 @@ namespace EgourmetAPI.Repository
                     pro_cst_cofins = produto.Pro_Cst_Cofins,
                     pro_perc_cofins = produto.Pro_Perc_Cofins,
                     itemservico = produto.Itemservico,
-                    deposito_codigo = produto.Deposito_Codigo,
                     Pro_Codigo = produto.Pro_Codigo,
                     emp_codigo = produto.Emp_Codigo
                 });
@@ -381,8 +378,7 @@ namespace EgourmetAPI.Repository
                         pro_perc_pis,
                         pro_cst_cofins,
                         pro_perc_cofins,
-                        itemservico,
-                        deposito_codigo) 
+                        itemservico) 
                         
                     values(
                     
@@ -392,7 +388,7 @@ namespace EgourmetAPI.Repository
                         @unid_codigo,  
                         @grup_codigo,  
                         @fam_codigo,  
-                        @pro_data_cadastro,
+                        (select timestamp 'NOW' from rdb$database),
                         @fab_codigo,
                         @pro_custo,
                         @pro_preco_venda,
@@ -439,25 +435,26 @@ namespace EgourmetAPI.Repository
                         @pro_perc_pis,
                         @pro_cst_cofins,
                         @pro_perc_cofins,
-                        @itemservico,
-                        @deposito_codigo) ";
+                        @itemservico) ";
 
             Response<Produto> resposta = new Response<Produto>(); 
 
             var connection = new FbConnection(conexao);
             try
             {
+                IdLanc que1 = Datpai.GerarIdLanc(produto.Emp_Codigo, connection, 
+                                                 "select (cast(pro_codigo as integer)+1) as IdLanc from produto where emp_codigo=@empresa");
+                
                 resposta.Data = produto;
                 resposta.Status = 400;
 
                 connection.Execute(query, new { 
-                    Pro_Codigo=produto.Pro_Codigo,
+                    Pro_Codigo=que1.idLanc,
                     emp_codigo=produto.Emp_Codigo,
                     for_codigo=produto.For_Codigo,
                     unid_codigo=produto.Unid_Codigo,
                     grup_codigo = produto.Grup_Codigo,
                     fam_codigo = produto.Fam_Codigo,
-                    pro_data_cadastro = produto.Pro_Data_Cadastro,
                     fab_codigo = produto.Fab_Codigo,
                     pro_custo = produto.Pro_Custo,
                     pro_preco_venda = produto.Pro_Preco_Venda,
@@ -504,8 +501,7 @@ namespace EgourmetAPI.Repository
                     pro_perc_pis = produto.Pro_Perc_Pis,
                     pro_cst_cofins = produto.Pro_Cst_Cofins,
                     pro_perc_cofins = produto.Pro_Perc_Cofins,
-                    itemservico = produto.Itemservico,
-                    deposito_codigo = produto.Deposito_Codigo
+                    itemservico = produto.Itemservico
                 });
 
             } 
@@ -524,5 +520,14 @@ namespace EgourmetAPI.Repository
             throw new NotImplementedException();
         }
 
+        public IEnumerable<Cliente> GetAllClientesPorEmpresa(int empCodigo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Produto> GetAll()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

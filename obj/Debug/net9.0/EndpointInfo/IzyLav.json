@@ -1128,6 +1128,214 @@
         }
       }
     },
+    "/api/Grupo": {
+      "get": {
+        "tags": [
+          "Grupo"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cargo"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cargo"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cargo"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Grupo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Grupo"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Grupo"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Grupo"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Grupo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Grupo"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Grupo"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Grupo"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Grupo/{id}": {
+      "get": {
+        "tags": [
+          "Grupo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Cargo"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Cargo"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Cargo"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Grupo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Maquinas/{id}": {
       "get": {
         "tags": [
@@ -2606,6 +2814,243 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/OrcamentosDetalhe"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Produto/{empresa}/{produto}": {
+      "get": {
+        "tags": [
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "empresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "produto",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Produto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Produto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Produto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "produto",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "empresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Produto/{empresa}": {
+      "get": {
+        "tags": [
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "empresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Produto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Produto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Produto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Produto": {
+      "put": {
+        "tags": [
+          "Produto"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Produto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Produto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Produto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Produto"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Produto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Produto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Produto"
               }
             }
           }
@@ -4291,6 +4736,24 @@
         },
         "additionalProperties": false
       },
+      "Cargo": {
+        "type": "object",
+        "properties": {
+          "cargo_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cargo_Descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "eh_Vendedor": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Cliente": {
         "type": "object",
         "properties": {
@@ -4677,6 +5140,24 @@
             "nullable": true
           },
           "fun_Foto": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Grupo": {
+        "type": "object",
+        "properties": {
+          "grup_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "grup_Descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "estoque": {
             "type": "string",
             "nullable": true
           }
@@ -5324,6 +5805,248 @@
         "properties": {
           "current": {
             "$ref": "#/components/schemas/OrcamentosDetalhe"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Produto": {
+        "type": "object",
+        "properties": {
+          "pro_Codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "for_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "unid_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "grup_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fam_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pro_Data_Cadastro": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fab_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pro_Custo": {
+            "type": "number",
+            "format": "float"
+          },
+          "pro_Preco_Venda": {
+            "type": "number",
+            "format": "float"
+          },
+          "pro_Ultima_Compra": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "pro_Ultima_Venda": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "pro_Estoque_Minimo": {
+            "type": "number",
+            "format": "float"
+          },
+          "pro_Estoque_Atual": {
+            "type": "number",
+            "format": "float"
+          },
+          "pro_Estoque_Previsto": {
+            "type": "number",
+            "format": "float"
+          },
+          "pro_Imagem1": {
+            "type": "string",
+            "nullable": true
+          },
+          "pro_Localizacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "pro_Observacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "pro_Barra": {
+            "type": "string",
+            "nullable": true
+          },
+          "pro_Baixa_Automatica": {
+            "type": "string",
+            "nullable": true
+          },
+          "pro_Modelo": {
+            "type": "string",
+            "nullable": true
+          },
+          "pro_Peso_Unitario": {
+            "type": "number",
+            "format": "float"
+          },
+          "pro_Altura": {
+            "type": "number",
+            "format": "float"
+          },
+          "pro_Largura": {
+            "type": "number",
+            "format": "float"
+          },
+          "pro_Icms": {
+            "type": "number",
+            "format": "float"
+          },
+          "pro_Sit": {
+            "type": "string",
+            "nullable": true
+          },
+          "cli_Codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "prod_Comissao": {
+            "type": "number",
+            "format": "float"
+          },
+          "conta_Codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "pro_Tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "codfornec": {
+            "type": "string",
+            "nullable": true
+          },
+          "pro_Indice": {
+            "type": "string",
+            "nullable": true
+          },
+          "desabilitado": {
+            "type": "string",
+            "nullable": true
+          },
+          "pro_Perc": {
+            "type": "number",
+            "format": "float"
+          },
+          "mostrar_Materia": {
+            "type": "string",
+            "nullable": true
+          },
+          "pro_Marca": {
+            "type": "string",
+            "nullable": true
+          },
+          "pro_Referencia": {
+            "type": "string",
+            "nullable": true
+          },
+          "pro_Descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricaob": {
+            "type": "string",
+            "nullable": true
+          },
+          "descrfiscal": {
+            "type": "string",
+            "nullable": true
+          },
+          "ncm": {
+            "type": "string",
+            "nullable": true
+          },
+          "unid_Codigovenda": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cod_Impressora": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pro_Custo_Medio": {
+            "type": "number",
+            "format": "float"
+          },
+          "cfop_Out": {
+            "type": "string",
+            "nullable": true
+          },
+          "cst_Out": {
+            "type": "string",
+            "nullable": true
+          },
+          "regime": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "origem_Nfe": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "taxaservico": {
+            "type": "number",
+            "format": "float"
+          },
+          "pro_Cst_Ipi": {
+            "type": "string",
+            "nullable": true
+          },
+          "pro_Perc_Ipi": {
+            "type": "number",
+            "format": "float"
+          },
+          "pro_Cst_Pis": {
+            "type": "string",
+            "nullable": true
+          },
+          "pro_Perc_Pis": {
+            "type": "number",
+            "format": "float"
+          },
+          "pro_Cst_Cofins": {
+            "type": "string",
+            "nullable": true
+          },
+          "pro_Perc_Cofins": {
+            "type": "number",
+            "format": "float"
+          },
+          "itemservico": {
+            "type": "string",
+            "nullable": true
+          },
+          "pro_Dtvalidade": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dtalter": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dtsinc": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false

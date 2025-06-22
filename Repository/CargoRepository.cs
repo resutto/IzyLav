@@ -1,7 +1,9 @@
 ﻿using Dapper;
+using egourmetAPI.Model;
 using EgourmetAPI.Model;
 using EgourmetAPI.Repository.Interface;
 using FirebirdSql.Data.FirebirdClient;
+using IzyLav.common;
 
 namespace EgourmetAPI.Repository
 {
@@ -22,8 +24,9 @@ namespace EgourmetAPI.Repository
 
             try
             {
+                IdLanc que1 = Datpai.GerarIdLanc(-1, connection, "select max(grup_codigo)+1 as IdLanc from grupo");
                 connection.Execute(query, new
-                { Codigo=obj.Cargo_Codigo, Descricao=obj.Cargo_Descricao, EhVendedor = obj.Eh_Vendedor
+                { Codigo=que1.idLanc, Descricao=obj.Cargo_Descricao, EhVendedor = obj.Eh_Vendedor
                 });
             }
             catch (Exception e)

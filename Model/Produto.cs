@@ -64,6 +64,5 @@ namespace EgourmetAPI.Model
         public DateTime Pro_Dtvalidade { get; set; }
         public DateTime Dtalter { get; set; }
         public DateTime Dtsinc { get; set; }
-        public int Deposito_Codigo { get; set; }
     }
 }

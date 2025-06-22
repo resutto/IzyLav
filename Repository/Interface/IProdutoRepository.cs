@@ -9,7 +9,9 @@ namespace EgourmetAPI.Repository.Interface
     {
         public Produto GetByProCodigoeEmpresa(string produto, int empresa);
         ResponseMessage Adicionar(Produto produto);
-        public void RemoveProduto(Produto produto);
+        public void RemoveProduto(string produto, int empresa);
+        public IEnumerable<Cliente> GetAllClientesPorEmpresa(int empCodigo);
+        public IEnumerable<Produto> GetAll(int empCodigo);
 
     }
 }

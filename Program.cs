@@ -74,6 +74,12 @@ builder.Services.AddScoped<ISetorService, SetorService>();
 builder.Services.AddScoped<ISaldoProdutoRepository, SaldoProdutoRepository>();
 builder.Services.AddScoped<ISaldoProdutoService, SaldoProdutoService>();
 
+builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
+builder.Services.AddScoped<IProdutoService, ProdutoService>();
+
+builder.Services.AddScoped<IGrupoRepository, GrupoRepository>();
+builder.Services.AddScoped<IGrupoService, GrupoService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
