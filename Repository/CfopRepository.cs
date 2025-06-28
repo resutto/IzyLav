@@ -61,7 +61,7 @@ namespace EgourmetAPI.Repository
             }
         }
 
-        public Cfop GetById(int id)
+        public Cfop GetById(string id)
         {
             string query = $@"select Cfop_Codigo,Cfop_Descricao,Cfop_Obs from cfop where cfop_codigo=@codigo";
 
@@ -81,7 +81,7 @@ namespace EgourmetAPI.Repository
             }
         }
 
-        public void Remove(int id)
+        public void Remove(string id)
         {
             string query = $@"delete from cfop where Cfop_Codigo=@codigo";
 
@@ -127,6 +127,11 @@ namespace EgourmetAPI.Repository
             {
                 connection.Close();
             }
+        }
+
+        public Cfop GetById(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

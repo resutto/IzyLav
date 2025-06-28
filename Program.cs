@@ -92,6 +92,18 @@ builder.Services.AddScoped<IFormaQdeDiasService, FormaQdeDiasService>();
 builder.Services.AddScoped<IDepositoRepository, DepositoRepository>();
 builder.Services.AddScoped<IDepositoService, DepositoService>();
 
+builder.Services.AddScoped<ICondicPagtoRepository, CondicPagtoRepository>();
+builder.Services.AddScoped<ICondicPagtoService, CondicPagtoService>();
+
+builder.Services.AddScoped<IFornecedorRepository, FornecedorRepository>();
+builder.Services.AddScoped<IFornecedorService, FornecedorService>();
+
+builder.Services.AddScoped<ICfopRepository, CfopRepository>();
+builder.Services.AddScoped<ICfopService, CfopService>();
+
+builder.Services.AddScoped<ICargoRepository, CargoRepository>();
+builder.Services.AddScoped<ICargoService, CargoService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

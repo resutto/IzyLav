@@ -1,13 +1,15 @@
 ﻿using Dapper;
+using egourmetAPI.Model;
 using EgourmetAPI.Model;
 using EgourmetAPI.Repository.Interface;
 using FirebirdSql.Data.FirebirdClient;
+using IzyLav.common;
 using System.Numerics;
 using System.Runtime.ConstrainedExecution;
 
 namespace EgourmetAPI.Repository
 {
-    public class FornecedorRepository : IForcedorRepository
+    public class FornecedorRepository : IFornecedorRepository
     {
 
         private IConfiguration _configuracoes;
@@ -47,10 +49,11 @@ namespace EgourmetAPI.Repository
             var connection = new FbConnection(conexao);
             try
             {
+                IdLanc que1 = Datpai.GerarIdLanc(-1, connection, "select max(for_codigo)+1 as IdLanc from fornecedor");
                 connection.Execute(query,
                     new
                     {
-                        codigo = obj.For_Codigo,
+                        codigo = que1.idLanc,
                         nome = obj.For_Nome_Fantasia,
                         razao = obj.For_Razao_Social,
                         endereco = obj.For_Endereco,

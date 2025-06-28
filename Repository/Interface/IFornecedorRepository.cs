@@ -3,7 +3,7 @@ using EgourmetAPI.Model;
 
 namespace EgourmetAPI.Repository.Interface
 {
-    public interface IForcedorRepository : IRepositoryBase<Fornecedor>
+    public interface IFornecedorRepository : IRepositoryBase<Fornecedor>
     {
     }
 }
