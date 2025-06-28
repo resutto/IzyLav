@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IzyLav")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2f2c18eec496e98bd95783f085da969d0eaaa8d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb318d1b60ca728c32b7579a20f6374d62cd1b11")]
 [assembly: System.Reflection.AssemblyProductAttribute("IzyLav")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IzyLav")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
