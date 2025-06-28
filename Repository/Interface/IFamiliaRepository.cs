@@ -7,6 +7,8 @@ namespace EgourmetAPI.Repository.Interface
     {
         public Familia GetByIdGrupoFamilia(int idFamilia, int idGrupo);
         public void RemoveIdGrupoFamilia(int idFamilia, int idGrupo);
+        public IEnumerable<Familia> GetAll(int grupCodigo);
+
 
     }
 

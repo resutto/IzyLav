@@ -1,7 +1,9 @@
 ﻿using Dapper;
+using egourmetAPI.Model;
 using EgourmetAPI.Model;
 using EgourmetAPI.Repository.Interface;
 using FirebirdSql.Data.FirebirdClient;
+using IzyLav.common;
 
 namespace EgourmetAPI.Repository
 {
@@ -23,9 +25,10 @@ namespace EgourmetAPI.Repository
 
             try
             {
+                IdLanc que1 = Datpai.GerarIdLanc(obj.Emp_Codigo, connection, "select max(dep_codigo)+1 from deposito where emp_Codigo=@empresa");
                 connection.Execute(query, new
                 {
-                    codigo = obj.Dep_Codigo,
+                    codigo = que1.idLanc,
                     empCodigo = obj.Emp_Codigo,
                     descricao = obj.Dep_Descricao,
                     local = obj.Dep_Local

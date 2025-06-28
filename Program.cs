@@ -80,6 +80,18 @@ builder.Services.AddScoped<IProdutoService, ProdutoService>();
 builder.Services.AddScoped<IGrupoRepository, GrupoRepository>();
 builder.Services.AddScoped<IGrupoService, GrupoService>();
 
+builder.Services.AddScoped<IFamiliaRepository, FamiliaRepository>();
+builder.Services.AddScoped<IFamiliaService, FamiliaService>();
+
+builder.Services.AddScoped<IFormaPagtoRepository, FormaPagtoRepository>();
+builder.Services.AddScoped<IFormaPagtoService, FormaPagtoService>();
+
+builder.Services.AddScoped<IFormaQdeDiasRepository, FormaQdeDiasRepository>();
+builder.Services.AddScoped<IFormaQdeDiasService, FormaQdeDiasService>();
+
+builder.Services.AddScoped<IDepositoRepository, DepositoRepository>();
+builder.Services.AddScoped<IDepositoService, DepositoService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

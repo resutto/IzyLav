@@ -7,6 +7,7 @@ namespace EgourmetAPI.Repository.Interface
     {
         public IEnumerable<FormaQdeDias> GetAll(int forma);
         public void Remove(int id, int forma);
+        public FormaQdeDias GetById(int id, int forma);
 
     }
 }

@@ -3,88 +3,12 @@
   "WorkspaceRootPath": "C:\\src\\IzyLav\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\repository\\gruporepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:repository\\gruporepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\controllers\\grupocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:controllers\\grupocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\controllers\\maquinatipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:controllers\\maquinatipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\repository\\condicpagtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:repository\\condicpagtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\services\\gruposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:services\\gruposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\services\\interface\\igruposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:services\\interface\\igruposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\model\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:model\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\services\\interface\\iprodutoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:services\\interface\\iprodutoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\services\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:services\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\repository\\interface\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:repository\\interface\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\repository\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:repository\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\controllers\\creditoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:controllers\\creditoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\repository\\saldoprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:repository\\saldoprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\repository\\seggruporepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:repository\\seggruporepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\services\\setorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:services\\setorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\services\\interface\\isetorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:services\\interface\\isetorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\services\\seggruposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:services\\seggruposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\services\\interface\\iseggruposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:services\\interface\\iseggruposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\repository\\setorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:repository\\setorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\controllers\\setorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:controllers\\setorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,277 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "SaldoProdutoRepository.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\SaldoProdutoRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\SaldoProdutoRepository.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Repository\\SaldoProdutoRepository.cs",
-              "RelativeToolTip": "Repository\\SaldoProdutoRepository.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T21:58:56.668Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GrupoRepository.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\GrupoRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\GrupoRepository.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Repository\\GrupoRepository.cs",
-              "RelativeToolTip": "Repository\\GrupoRepository.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Title": "CondicPagtoRepository.cs",
+              "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\CondicPagtoRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\CondicPagtoRepository.cs",
+              "ToolTip": "C:\\src\\IzyLav\\Repository\\CondicPagtoRepository.cs",
+              "RelativeToolTip": "Repository\\CondicPagtoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T03:57:58.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MaquinaTipoController.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\MaquinaTipoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MaquinaTipoController.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Controllers\\MaquinaTipoController.cs",
-              "RelativeToolTip": "Controllers\\MaquinaTipoController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAwwE0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T03:49:50.52Z",
+              "WhenOpened": "2025-06-28T04:09:39.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GrupoController.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\GrupoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\GrupoController.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Controllers\\GrupoController.cs",
-              "RelativeToolTip": "Controllers\\GrupoController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAmwD0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T03:40:33.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GrupoService.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Services\\GrupoService.cs",
-              "RelativeDocumentMoniker": "Services\\GrupoService.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Services\\GrupoService.cs",
-              "RelativeToolTip": "Services\\GrupoService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAkwCUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T03:32:21.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IGrupoService.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Services\\Interface\\IGrupoService.cs",
-              "RelativeDocumentMoniker": "Services\\Interface\\IGrupoService.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Services\\Interface\\IGrupoService.cs",
-              "RelativeToolTip": "Services\\Interface\\IGrupoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T03:31:12.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Model\\Produto.cs",
-              "RelativeDocumentMoniker": "Model\\Produto.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Model\\Produto.cs",
-              "RelativeToolTip": "Model\\Produto.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAiwDkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T02:59:25.04Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProdutoController.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\ProdutoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProdutoController.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Controllers\\ProdutoController.cs",
-              "RelativeToolTip": "Controllers\\ProdutoController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAACYAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T00:43:39.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IProdutoRepository.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\Interface\\IProdutoRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Interface\\IProdutoRepository.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Repository\\Interface\\IProdutoRepository.cs",
-              "RelativeToolTip": "Repository\\Interface\\IProdutoRepository.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAIAwwAsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T00:17:19.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\src\\IzyLav\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAADwv0wAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAADwv1AAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T07:26:48.478Z",
+              "WhenOpened": "2025-06-28T00:27:39.034Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProdutoService.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Services\\ProdutoService.cs",
-              "RelativeDocumentMoniker": "Services\\ProdutoService.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Services\\ProdutoService.cs",
-              "RelativeToolTip": "Services\\ProdutoService.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T00:12:37.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IProdutoService.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Services\\Interface\\IProdutoService.cs",
-              "RelativeDocumentMoniker": "Services\\Interface\\IProdutoService.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Services\\Interface\\IProdutoService.cs",
-              "RelativeToolTip": "Services\\Interface\\IProdutoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T00:12:03.767Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ProdutoRepository.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\ProdutoRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\ProdutoRepository.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Repository\\ProdutoRepository.cs",
-              "RelativeToolTip": "Repository\\ProdutoRepository.cs",
-              "ViewState": "AgIAAAgCAAAAAAAAAAAiwBMCAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T22:28:57.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CreditosController.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\CreditosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CreditosController.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Controllers\\CreditosController.cs",
-              "RelativeToolTip": "Controllers\\CreditosController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T00:58:50.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SegGrupoService.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Services\\SegGrupoService.cs",
-              "RelativeDocumentMoniker": "Services\\SegGrupoService.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Services\\SegGrupoService.cs",
-              "RelativeToolTip": "Services\\SegGrupoService.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T21:47:13.139Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ISegGrupoService.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Services\\Interface\\ISegGrupoService.cs",
-              "RelativeDocumentMoniker": "Services\\Interface\\ISegGrupoService.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Services\\Interface\\ISegGrupoService.cs",
-              "RelativeToolTip": "Services\\Interface\\ISegGrupoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T21:46:25.118Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SegGrupoRepository.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\SegGrupoRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\SegGrupoRepository.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Repository\\SegGrupoRepository.cs",
-              "RelativeToolTip": "Repository\\SegGrupoRepository.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAuwCIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T21:44:31.318Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SetorRepository.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\SetorRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\SetorRepository.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Repository\\SetorRepository.cs",
-              "RelativeToolTip": "Repository\\SetorRepository.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T21:39:54.635Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SetorService.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Services\\SetorService.cs",
-              "RelativeDocumentMoniker": "Services\\SetorService.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Services\\SetorService.cs",
-              "RelativeToolTip": "Services\\SetorService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAYwBEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T21:39:28.158Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ISetorService.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Services\\Interface\\ISetorService.cs",
-              "RelativeDocumentMoniker": "Services\\Interface\\ISetorService.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Services\\Interface\\ISetorService.cs",
-              "RelativeToolTip": "Services\\Interface\\ISetorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T21:39:21.069Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SetorController.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\SetorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SetorController.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Controllers\\SetorController.cs",
-              "RelativeToolTip": "Controllers\\SetorController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAmwBYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T21:34:16.99Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }

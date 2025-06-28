@@ -1,7 +1,9 @@
 ﻿using Dapper;
+using egourmetAPI.Model;
 using EgourmetAPI.Model;
 using EgourmetAPI.Repository.Interface;
 using FirebirdSql.Data.FirebirdClient;
+using IzyLav.common;
 
 namespace EgourmetAPI.Repository
 {
@@ -39,23 +41,40 @@ namespace EgourmetAPI.Repository
             }
         }
 
-        public FormaQdeDias GetById(int id)
+        public FormaQdeDias GetById(int id, int forma)
         {
-            throw new NotImplementedException();
+            string query = $@"select Codigo,Formpgto_Codigo,Qdedias from forma_qdedias
+                               where Formpgto_Codigo=@forma and Codigo=@codigo";
+
+            var connection = new FbConnection(conexao);
+
+            try
+            {
+                return connection.Query<FormaQdeDias>(query, new { forma = forma,codigo=id}).FirstOrDefault();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                connection.Close();
+            }
         }
 
         public void Add(FormaQdeDias obj)
         {
-            string query = $@"insert into forma_qdedias(Codigo,Formpgto_Codigo,Qdedias)
+            string query = $@"insert into forma_qdedias(Codigo,obj.Formpgto_Codigo,Qdedias)
                                                  values(@id,@forma,@dias)";
 
             var connection = new FbConnection(conexao);
 
             try
             {
+                IdLanc que1 = Datpai.GerarIdLanc(-1, connection, "select max(codigo)+1 from FORMA_QDEDIAS where Formpgto_Codigo=@empresa");
                 connection.Execute(query, new
                 {
-                    id = obj.Codigo,
+                    id = que1.idLanc,
                     forma=obj.Formpgto_Codigo,
                     dias=obj.Qdedias
                 });
@@ -125,6 +144,11 @@ namespace EgourmetAPI.Repository
         }
 
         public void Remove(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public FormaQdeDias GetById(int id)
         {
             throw new NotImplementedException();
         }

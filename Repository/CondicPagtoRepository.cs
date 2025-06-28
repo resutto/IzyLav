@@ -1,7 +1,9 @@
 ﻿using Dapper;
+using egourmetAPI.Model;
 using EgourmetAPI.Model;
 using EgourmetAPI.Repository.Interface;
 using FirebirdSql.Data.FirebirdClient;
+using IzyLav.common;
 using Microsoft.AspNetCore.SignalR;
 
 namespace EgourmetAPI.Repository
@@ -42,9 +44,10 @@ namespace EgourmetAPI.Repository
 
             try
             {
+                IdLanc que1 = Datpai.GerarIdLanc(-1, connection, "select max(condic_codigo)+1 as IdLanc from condic_pagto");
                 connection.Execute(query, new
                 {
-                    Codigo=obj.Condic_Codigo,
+                    Codigo=que1.idLanc,
                     Descricao = obj.Condic_Descricao,
                     Condic_Avista=obj.Condic_Avista,
                     Tipo=obj.Condic_Tipo,
@@ -61,27 +64,25 @@ namespace EgourmetAPI.Repository
             {
                 connection.Close();
             }
-
-
         }
 
-        public IEnumerable<CondicPagto> GetAll()
+        public IEnumerable<CondicPagto> GetAll(string tipo)
         {
             string query = $@" select   
-                                  Condic_Codigo
-                                  Condic_Descricao
-                                  Condic_Avista
-                                  Port_Codigo
-                                  Condic_Tipo
+                                  Condic_Codigo,
+                                  Condic_Descricao,
+                                  Condic_Avista,
+                                  Port_Codigo,
+                                  Condic_Tipo,
                                   Condic_Hab,
-                                  Perfil
+                                  Perfil,
                                   Idformapagsefaz 
-                                from condic_pagto ";
+                                from condic_pagto where Condic_Tipo=@tipoCodigo";
             var connection = new FbConnection(conexao);
 
             try
             {
-                return connection.Query<CondicPagto>(query).ToList();
+                return connection.Query<CondicPagto>(query, new { tipoCodigo=tipo }).ToList();
             }
             catch (Exception e)
             {
@@ -91,20 +92,17 @@ namespace EgourmetAPI.Repository
             {
                 connection.Close();
             }
-
-
         }
-
         public CondicPagto GetById(int id)
         {
             string query = $@" select   
-                                  Condic_Codigo
-                                  Condic_Descricao
-                                  Condic_Avista
-                                  Port_Codigo
-                                  Condic_Tipo
+                                  Condic_Codigo,
+                                  Condic_Descricao,
+                                  Condic_Avista,
+                                  Port_Codigo,
+                                  Condic_Tipo,
                                   Condic_Hab,
-                                  Perfil
+                                  Perfil,
                                   Idformapagsefaz 
                                 from condic_pagto where condic_codigo=@codigo";
             var connection = new FbConnection(conexao);
@@ -146,9 +144,7 @@ namespace EgourmetAPI.Repository
             {
                 connection.Close();
             }
-
         }
-
         public void Update(CondicPagto obj)
         {
             string query = $@"update condic_pagto set 
@@ -185,6 +181,11 @@ namespace EgourmetAPI.Repository
                 connection.Close();
             }
 
+        }
+
+        public IEnumerable<CondicPagto> GetAll()
+        {
+            throw new NotImplementedException();
         }
     }
 
