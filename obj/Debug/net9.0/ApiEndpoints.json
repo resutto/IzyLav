@@ -1833,6 +1833,37 @@
     ]
   },
   {
+    "ContainingType": "IzyLav.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login/{usuario}/{senha}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "senha",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EgourmetAPI.Model.Usuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "IzyLav.Controllers.MaquinasController",
     "Method": "Update",
     "RelativePath": "api/Maquinas",

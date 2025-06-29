@@ -104,6 +104,9 @@ builder.Services.AddScoped<ICfopService, CfopService>();
 builder.Services.AddScoped<ICargoRepository, CargoRepository>();
 builder.Services.AddScoped<ICargoService, CargoService>();
 
+builder.Services.AddScoped<ILoginRepository, LoginRepository>();
+builder.Services.AddScoped<ILoginService, LoginService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
