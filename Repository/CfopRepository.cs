@@ -133,5 +133,10 @@ namespace EgourmetAPI.Repository
         {
             throw new NotImplementedException();
         }
+
+        public void Remove(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

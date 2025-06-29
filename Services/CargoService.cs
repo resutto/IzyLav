@@ -27,7 +27,7 @@ namespace IzyLav.Services
 
         public void Remove(int id)
         {
-            _cargoRepository.Remove(id)
+            _cargoRepository.Remove(id);
         }
 
         public void Update(Cargo objCargo)

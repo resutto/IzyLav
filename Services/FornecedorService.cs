@@ -6,9 +6,9 @@ namespace IzyLav.Services
 {
     public class FornecedorService : IFornecedorService
     {
-        private readonly IForcedorRepository _repositorio;
+        private readonly IFornecedorRepository _repositorio;
 
-        public FornecedorService(IForcedorRepository repositorio)
+        public FornecedorService(IFornecedorRepository repositorio)
         {
             _repositorio = repositorio;
         }

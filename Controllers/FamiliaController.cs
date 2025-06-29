@@ -20,7 +20,7 @@ namespace IzyLav.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Familia>> GetAll(int grupo)
         {
-            return Ok(_familiaservice.GetAll(grupo));
+            return Ok(_familiaservice.GetAllAsync(grupo));
         }
 
 
@@ -30,7 +30,8 @@ namespace IzyLav.Controllers
         {
             return Ok(_familiaservice.GetById(grupo,familia));
         }
-
+        
+        [HttpPut]
         public ActionResult<String> Update([FromBody] Familia familia)
         {
             try
@@ -43,6 +44,7 @@ namespace IzyLav.Controllers
                 return BadRequest(ex.Message);
             }
         }
+       
 
         [Route("{grupo}/{familia}")]
         [HttpDelete]
@@ -58,6 +60,7 @@ namespace IzyLav.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
         [HttpPost]
         public ActionResult<String> Add([FromBody] Familia familia)
         {
