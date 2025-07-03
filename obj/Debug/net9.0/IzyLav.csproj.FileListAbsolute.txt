@@ -41,3 +41,16 @@ C:\src\IzyLav\obj\Debug\net9.0\refint\IzyLav.dll
 C:\src\IzyLav\obj\Debug\net9.0\IzyLav.pdb
 C:\src\IzyLav\obj\Debug\net9.0\IzyLav.genruntimeconfig.cache
 C:\src\IzyLav\obj\Debug\net9.0\ref\IzyLav.dll
+C:\src\IzyLav\bin\Debug\net9.0\libman.json
+C:\src\IzyLav\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\src\IzyLav\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\src\IzyLav\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\src\IzyLav\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\src\IzyLav\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\src\IzyLav\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\src\IzyLav\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\src\IzyLav\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\src\IzyLav\bin\Debug\net9.0\DocumentFormat.OpenXml.dll
+C:\src\IzyLav\bin\Debug\net9.0\OpenXmlPowerTools.dll
+C:\src\IzyLav\bin\Debug\net9.0\System.IO.Packaging.dll
+C:\src\IzyLav\bin\Debug\net9.0\System.Management.Automation.dll

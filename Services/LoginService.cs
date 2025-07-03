@@ -1,4 +1,5 @@
 ﻿using EgourmetAPI.Model;
+using IzyLav.Data;
 using IzyLav.Repository.Interface;
 using IzyLav.Services.Interface;
 
@@ -21,5 +22,10 @@ namespace IzyLav.Services
         {
             return _loginRepository.Login(usuario, senha);
         }
+
+        public IEnumerable<UsuarioAplicacoesDTO> Aplicacoes(string usuario){
+            return _loginRepository.Aplicacoes(usuario);
+        }
+
     }
 }

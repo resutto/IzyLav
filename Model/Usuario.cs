@@ -1,4 +1,6 @@
-﻿namespace EgourmetAPI.Model
+﻿using egourmetAPI.Model.Enum;
+
+namespace EgourmetAPI.Model
 {
     public class Usuario
     {
@@ -11,5 +13,6 @@
         public string Ususenhaweb { get; set; }
         public string Usuarioweb { get; set; }
         public string Ususenharapida { get; set; }
+        public string Role { get; set; }
     }
 }

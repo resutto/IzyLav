@@ -1,3 +1,4 @@
+using System.Text;
 using egourmetAPI;
 using egourmetAPI.Repository;
 using egourmetAPI.Repository.Interface;
@@ -9,7 +10,11 @@ using IzyLav.Repository;
 using IzyLav.Repository.Interface;
 using IzyLav.Services;
 using IzyLav.Services.Interface;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using OpenXmlPowerTools;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,10 +23,63 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at  https://aka.ms/aspnet/openapi
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
 
-builder.Services.AddScoped<IEmpresaRepository,EmpresaRepository>();
-builder.Services.AddScoped<IEmpresaService,EmpresaService>();
+    options.SwaggerDoc(name: "v1", new OpenApiInfo()
+    {
+        Version = "v1",
+        Title = "IzyLavApi",
+        Description = "Api Lavanderia"
+    });
+
+    options.AddSecurityDefinition(name: "Bearer", new OpenApiSecurityScheme()
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Cabeçalho de Autorização JWT está usando o esquema Bearer \r\n\r\n Digite 'Bearer' antes de colocar o Token"
+    });
+
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+        new OpenApiSecurityScheme
+        {
+            Reference = new OpenApiReference
+            {
+                Type=ReferenceType.SecurityScheme,
+                Id="Bearer"
+            }
+        },
+        Array.Empty<string>()
+        }
+    });
+
+});
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+    };
+});
+
+builder.Services.AddScoped<IEmpresaRepository, EmpresaRepository>();
+builder.Services.AddScoped<IEmpresaService, EmpresaService>();
 
 builder.Services.AddScoped<IMaquinaTipoRepository, MaquinaTipoRepository>();
 builder.Services.AddScoped<IMaquinaTipoService, MaquinaTipoService>();
@@ -106,6 +164,7 @@ builder.Services.AddScoped<ICargoService, CargoService>();
 
 builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 builder.Services.AddScoped<ILoginService, LoginService>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 
 var app = builder.Build();
 
@@ -117,7 +176,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

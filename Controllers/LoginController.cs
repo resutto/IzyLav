@@ -1,5 +1,6 @@
 ﻿using EgourmetAPI.Model;
 using IzyLav.common;
+using IzyLav.Data;
 using IzyLav.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,16 +11,38 @@ namespace IzyLav.Controllers
     public class LoginController : ControllerBase
     {
         private readonly ILoginService _service;
-        public LoginController(ILoginService service)
+        private readonly ITokenService _tokenService;
+        public LoginController(ILoginService service, ITokenService tokenService)
         {
             _service = service;
+            _tokenService = tokenService;
         }
 
         [Route("{usuario}/{senha}")]
         [HttpGet]
-        public ActionResult<Usuario> Login(string usuario, string senha)
+        public ActionResult<string> Login(string usuario, string senha)
         {
-            return Ok(_service.Login(usuario, Datpai.HashMD5(senha)));
+            Usuario usuarioResult=_service.Login(usuario, Datpai.HashMD5(senha));
+            if (usuarioResult != null) {
+                string sbearer = _tokenService.GenerateToken(usuarioResult);
+                if (sbearer=="") return Unauthorized();
+                return Ok(sbearer);
+                //return Ok(usuarioResult); 
+            }
+            else return NotFound();
+        }
+
+        [Route("{usuario}")]
+        [HttpGet]
+        public ActionResult<IEnumerable<UsuarioAplicacoesDTO>> Aplicacoes(string usuario)
+        {
+            IEnumerable<UsuarioAplicacoesDTO> aplicacoesResult = _service.Aplicacoes(usuario);
+            if (aplicacoesResult.Count()>0)
+            {
+                return Ok(aplicacoesResult);
+            }
+            else return NotFound(); 
+            
         }
     }
 }

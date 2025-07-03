@@ -2,6 +2,7 @@
 using EgourmetAPI.Model;
 using IzyLav.Model;
 using IzyLav.Services.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,6 +10,7 @@ namespace IzyLav.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize (Roles="Manager")]
     public class AplicacoesController : ControllerBase
     {
         private readonly IAplicacoesService _service;

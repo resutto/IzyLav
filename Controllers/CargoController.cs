@@ -1,5 +1,6 @@
 ﻿using EgourmetAPI.Model;
 using IzyLav.Services.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,6 +8,7 @@ namespace IzyLav.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles ="Manager")]
     public class CargoController : ControllerBase
     {   
         private ICargoService _cargoService;
