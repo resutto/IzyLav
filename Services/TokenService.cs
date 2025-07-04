@@ -30,8 +30,8 @@ namespace IzyLav.Services
                 audience: audience,
                 claims: new[]
                 {
-                    new Claim(type: ClaimTypes.Name, value:"ADMINISTRA"),
-                    new Claim(type: ClaimTypes.Role, value:"Manager"),
+                    new Claim(type: ClaimTypes.Name, value: user.usuario),
+                    new Claim(type: ClaimTypes.Role, value: user.Grupo),
                     //user.Role
 
                 },

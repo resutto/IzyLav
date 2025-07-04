@@ -25,7 +25,7 @@ namespace IzyLav.Repository
                                      @ususenhaweb,@usuarioweb,@cli_codigo,@ususenharapida,0)";
                     connection.Open();
                     connection.Execute(query, new {
-                        usuario= objUsuario.UsuarioCodigo,
+                        usuario= objUsuario.usuario,
                         grup_codigo = objUsuario.Grup_Codigo,
                         ususenha = objUsuario.Ususenha,
                         emp_codigo = objUsuario.Emp_Codigo,
@@ -149,7 +149,7 @@ namespace IzyLav.Repository
                         ususenhaweb = objUsuario.Ususenhaweb,
                         usuarioweb = objUsuario.Ususenha,
                         ususenharapida = objUsuario.Ususenharapida,
-                        usuario = objUsuario.UsuarioCodigo,
+                        usuario = objUsuario.usuario,
                         emp_codigo = objUsuario.Emp_Codigo,
 
                     });

@@ -24,7 +24,7 @@ namespace IzyLav.Repository
         {
             using (var connection = new FbConnection(conexao))
             {
-                string query = $@"select * from usuario where ususenhaweb=@senha and usuario=@user ";
+                string query = $@"select a.*,b.grupo_descricao as Grupo from usuario a, seg_grupo b where a.ususenhaweb=@senha and a.usuario=@user and a.grup_codigo=b.grup_codigo ";
                 try
                 {
                     return connection.Query<Usuario>(query, new { user = usuario, senha = senha }).FirstOrDefault();

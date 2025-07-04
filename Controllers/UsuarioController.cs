@@ -2,6 +2,7 @@
 using EgourmetAPI.Model;
 using IzyLav.Model;
 using IzyLav.Services.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IzyLav.Controllers
@@ -16,6 +17,7 @@ namespace IzyLav.Controllers
         }
         [Route("{emp_Codigo}")]
         [HttpGet]
+        [Authorize (Roles ="Administrador")]
         public ActionResult<IEnumerable<Usuario>> GetAll( int emp_Codigo)
         {
             return Ok(_usuarioService.GetAllAsync(emp_Codigo));
@@ -42,6 +44,7 @@ namespace IzyLav.Controllers
 
         [Route("{userId}/{emp_Codigo}")]
         [HttpDelete]
+        [Authorize(Roles = "Administrador")]
         public ActionResult<String> Remover(string userId, int emp_Codigo)
         {
             try

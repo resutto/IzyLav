@@ -1,6 +1,7 @@
 ﻿using egourmetAPI.Model;
 using IzyLav.Model;
 using IzyLav.Services.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,6 +9,7 @@ namespace IzyLav.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Administrador")]
     public class MaquinasExecucaoController : ControllerBase
     {
         private readonly IMaquinasExecucaoService _servico;

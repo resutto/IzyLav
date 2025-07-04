@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <None Remove="Controllers\DepositoController.cs~RF215fb4b8.TMP" />
+    <None Remove="Controllers\FamiliaController.rar" />
   </ItemGroup>
 
   <ItemGroup>

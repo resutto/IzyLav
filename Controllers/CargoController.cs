@@ -8,7 +8,7 @@ namespace IzyLav.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles ="Manager")]
+    [Authorize(Roles ="Administrador")]
     public class CargoController : ControllerBase
     {   
         private ICargoService _cargoService;

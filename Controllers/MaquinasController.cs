@@ -1,13 +1,14 @@
 ﻿using egourmetAPI.Model;
 using IzyLav.Model;
 using IzyLav.Services.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IzyLav.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
+    [ApiController]    
     public class MaquinasController : ControllerBase
     {
         private readonly IMaquinasService _servico;
@@ -17,18 +18,21 @@ namespace IzyLav.Controllers
         }
         [Route("{id}")]
         [HttpGet]
+        [Authorize(Roles = "Administrador")]
         public ActionResult<IEnumerable<Maquinas>> GetAll(int id) { 
           return Ok(_servico.GetAll(id));
         }
 
         [Route("{id}/{empCodigo}")]
         [HttpGet]
+        [Authorize(Roles = "Administrador")]
         public ActionResult<Maquinas> GetById(string id, int empCodigo)
         {
             return _servico.GetById(id, empCodigo);
         }
 
         [HttpPut]
+        [Authorize(Roles = "Administrador")]
         public ActionResult<String> Update([FromBody] Maquinas maquina)
         {
             try
@@ -44,6 +48,7 @@ namespace IzyLav.Controllers
         }
         [Route("{id}/{empCodigo}")]
         [HttpDelete]
+        [Authorize(Roles = "Administrador")]
         public ActionResult<String> Remover(string id, int empCodigo)
         {
             try
@@ -58,6 +63,7 @@ namespace IzyLav.Controllers
         }
         
         [HttpPost]
+        [Authorize(Roles = "Administrador")]
         public ActionResult<String> Add([FromBody] Maquinas maquina)
         {
             try

@@ -27,7 +27,6 @@ namespace IzyLav.Controllers
                 string sbearer = _tokenService.GenerateToken(usuarioResult);
                 if (sbearer=="") return Unauthorized();
                 return Ok(sbearer);
-                //return Ok(usuarioResult); 
             }
             else return NotFound();
         }

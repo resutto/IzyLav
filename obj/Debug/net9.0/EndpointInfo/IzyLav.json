@@ -8292,7 +8292,7 @@
             "type": "integer",
             "format": "int32"
           },
-          "usuarioCodigo": {
+          "usuario": {
             "type": "string",
             "nullable": true
           },
@@ -8324,7 +8324,7 @@
             "type": "string",
             "nullable": true
           },
-          "role": {
+          "grupo": {
             "type": "string",
             "nullable": true
           }
