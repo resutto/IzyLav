@@ -618,7 +618,7 @@
   {
     "ContainingType": "IzyLav.Controllers.CondicPagtoController",
     "Method": "GetAll",
-    "RelativePath": "api/CondicPagto/{tipo}",
+    "RelativePath": "api/CondicPagto/todos/{tipo}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1281,7 +1281,7 @@
   {
     "ContainingType": "IzyLav.Controllers.FormaPagtoController",
     "Method": "GetAll",
-    "RelativePath": "api/FormaPagto/{tipo}",
+    "RelativePath": "api/FormaPagto/todos/{tipo}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1834,32 +1834,6 @@
   },
   {
     "ContainingType": "IzyLav.Controllers.LoginController",
-    "Method": "Aplicacoes",
-    "RelativePath": "api/Login/{usuario}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "usuario",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[IzyLav.Data.UsuarioAplicacoesDTO, IzyLav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "IzyLav.Controllers.LoginController",
     "Method": "Login",
     "RelativePath": "api/Login/{usuario}/{senha}",
     "HttpMethod": "GET",
@@ -1880,6 +1854,37 @@
     "ReturnTypes": [
       {
         "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IzyLav.Controllers.LoginController",
+    "Method": "Aplicacoes",
+    "RelativePath": "api/Login/aplic/{empresa}/{usuario}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "empresa",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[IzyLav.Data.UsuarioAplicacoesDTO, IzyLav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

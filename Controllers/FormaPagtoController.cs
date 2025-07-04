@@ -16,10 +16,10 @@ namespace IzyLav.Controllers
             _service = service;
         }
 
-        [Route("{tipo}")]
+        [Route("todos/{tipo}")]
         [HttpGet]
         public ActionResult<IEnumerator<FormaPagto>> GetAll(string tipo) { 
-            return Ok(_service.GetAllAsync(tipo));
+            return Ok(_service.GetAllAsync(tipo.ToUpper()));
         }
 
         [Route("{id}")]

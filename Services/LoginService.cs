@@ -23,8 +23,8 @@ namespace IzyLav.Services
             return _loginRepository.Login(usuario, senha);
         }
 
-        public IEnumerable<UsuarioAplicacoesDTO> Aplicacoes(string usuario){
-            return _loginRepository.Aplicacoes(usuario);
+        public IEnumerable<UsuarioAplicacoesDTO> Aplicacoes(string usuario, int empresa){
+            return _loginRepository.Aplicacoes(usuario,empresa);
         }
 
     }

@@ -2,6 +2,7 @@
 using IzyLav.common;
 using IzyLav.Data;
 using IzyLav.Services.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IzyLav.Controllers
@@ -31,11 +32,12 @@ namespace IzyLav.Controllers
             else return NotFound();
         }
 
-        [Route("{usuario}")]
+        [Route("aplic/{empresa}/{usuario}")]
         [HttpGet]
-        public ActionResult<IEnumerable<UsuarioAplicacoesDTO>> Aplicacoes(string usuario)
+        [Authorize (Roles ="Administrador,Usuarios") ]
+        public ActionResult<IEnumerable<UsuarioAplicacoesDTO>> Aplicacoes(string usuario, int empresa)
         {
-            IEnumerable<UsuarioAplicacoesDTO> aplicacoesResult = _service.Aplicacoes(usuario);
+            IEnumerable<UsuarioAplicacoesDTO> aplicacoesResult = _service.Aplicacoes(usuario,empresa);
             if (aplicacoesResult.Count()>0)
             {
                 return Ok(aplicacoesResult);

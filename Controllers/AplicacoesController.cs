@@ -10,7 +10,7 @@ namespace IzyLav.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize (Roles="Administrador")]
+    [Authorize (Roles="Administrador,Usuarios")]
     public class AplicacoesController : ControllerBase
     {
         private readonly IAplicacoesService _service;

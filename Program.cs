@@ -166,6 +166,9 @@ builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 builder.Services.AddScoped<ILoginService, LoginService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 
+builder.Services.AddScoped<ISegGrupoService, SegGrupoService>();
+builder.Services.AddScoped<ISegGrupoRepository, SegGrupoRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

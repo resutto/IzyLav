@@ -7,7 +7,7 @@ namespace IzyLav.Repository.Interface
     {
         public void EsqueceuSenha();
         public Usuario Login(string usuario, string senha);
-        public IEnumerable<UsuarioAplicacoesDTO> Aplicacoes(string usuario);
+        public IEnumerable<UsuarioAplicacoesDTO> Aplicacoes(string usuario, int empresa);
 
     }
 }

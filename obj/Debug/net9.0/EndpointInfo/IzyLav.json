@@ -865,7 +865,7 @@
         }
       }
     },
-    "/api/CondicPagto/{tipo}": {
+    "/api/CondicPagto/todos/{tipo}": {
       "get": {
         "tags": [
           "CondicPagto"
@@ -1982,7 +1982,7 @@
         }
       }
     },
-    "/api/FormaPagto/{tipo}": {
+    "/api/FormaPagto/todos/{tipo}": {
       "get": {
         "tags": [
           "FormaPagto"
@@ -3154,7 +3154,7 @@
         }
       }
     },
-    "/api/Login/{usuario}": {
+    "/api/Login/aplic/{empresa}/{usuario}": {
       "get": {
         "tags": [
           "Login"
@@ -3166,6 +3166,15 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "empresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -8357,6 +8366,14 @@
           "usuario": {
             "maxLength": 10,
             "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "funcionario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
             "type": "string",
             "nullable": true
           }

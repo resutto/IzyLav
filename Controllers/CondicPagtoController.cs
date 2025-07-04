@@ -15,11 +15,11 @@ namespace IzyLav.Controllers
             _service=service;
         }
         
-        [Route("{tipo}")]
+        [Route("todos/{tipo}")]
         [HttpGet]
         public ActionResult<IEnumerable<CondicPagto>> GetAll(string tipo)
         {
-            return Ok(_service.GetAllAsync(tipo));
+            return Ok(_service.GetAllAsync(tipo.ToUpper()));
         }
 
         [Route("{id}")]

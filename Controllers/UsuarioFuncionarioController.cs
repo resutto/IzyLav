@@ -19,7 +19,7 @@ namespace IzyLav.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<UsuarioFuncionario>> GetAll(int empresa, string usuario)
         {
-            return Ok(_servico.GetAll(empresa,usuario));
+            return Ok(_servico.GetAll(empresa,usuario.Substring(0,10).ToUpper()));
         }
     }
 }
