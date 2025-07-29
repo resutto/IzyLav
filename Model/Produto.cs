@@ -53,7 +53,7 @@ namespace EgourmetAPI.Model
         public string Cst_Out { get; set; }
         public int Regime { get; set; }
         public int Origem_Nfe { get; set; }
-        public float Taxaservico { get; set; }
+        public string Taxaservico { get; set; }
         public string Pro_Cst_Ipi { get; set; }
         public float Pro_Perc_Ipi { get; set; }
         public string Pro_Cst_Pis { get; set; }

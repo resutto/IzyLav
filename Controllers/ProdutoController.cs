@@ -4,6 +4,7 @@ using IzyLav.Model;
 using IzyLav.Services.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Model;
 
 namespace IzyLav.Controllers
 {
@@ -70,6 +71,13 @@ namespace IzyLav.Controllers
             {
                 return BadRequest(ex.Message);
             }
+        }
+
+        [Route("Grupo/{empCodigo}/{grupoCodigo}")]
+        [HttpGet]
+        public ActionResult<IEnumerable<Produto>> GetPorGrupo(int empCodigo, int grupoCodigo)
+        {
+            return Ok(_produtoService.GetPorGrupo(empCodigo,grupoCodigo));
         }
 
 

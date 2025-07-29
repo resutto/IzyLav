@@ -4954,6 +4954,64 @@
         }
       }
     },
+    "/api/Produto/Grupo/{empCodigo}/{grupoCodigo}": {
+      "get": {
+        "tags": [
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "empCodigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "grupoCodigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Produto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Produto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Produto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/SaldoProduto/{empresa}/{produto}": {
       "get": {
         "tags": [
@@ -8140,8 +8198,8 @@
             "format": "int32"
           },
           "taxaservico": {
-            "type": "number",
-            "format": "float"
+            "type": "string",
+            "nullable": true
           },
           "pro_Cst_Ipi": {
             "type": "string",

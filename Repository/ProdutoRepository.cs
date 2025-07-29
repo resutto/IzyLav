@@ -529,5 +529,39 @@ namespace EgourmetAPI.Repository
         {
             throw new NotImplementedException();
         }
+
+        public IEnumerable<Produto> GetPorGrupo(int empCodigo, int grupoCodigo)
+        {
+            string query = $@" select  
+                        Pro_Codigo,
+                        emp_codigo, 
+                        for_codigo,  
+                        unid_codigo,  
+                        grup_codigo,  
+                        CAST(pro_preco_venda AS DOUBLE PRECISION) as pro_preco_venda,
+                        pro_imagem1,
+                        pro_barra,
+                        pro_descricao from produto where emp_codigo=@empresa and grup_codigo=@grupo";
+
+            var connection = new FbConnection(conexao);
+
+            try
+            {
+                return connection.Query<Produto>(query, new { empresa = empCodigo, grupo=grupoCodigo }).ToList();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+
+        }
+
     }
 }
