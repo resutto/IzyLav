@@ -104,6 +104,7 @@ namespace EgourmetAPI.Repository
 
         }
 
+
         public Produto GetById(int id)
         {
             throw new NotImplementedException();
@@ -532,7 +533,8 @@ namespace EgourmetAPI.Repository
 
         public IEnumerable<Produto> GetPorGrupo(int empCodigo, int grupoCodigo)
         {
-            string query = $@" select  
+            string query = 
+                        $@" select  
                         Pro_Codigo,
                         emp_codigo, 
                         for_codigo,  
@@ -541,13 +543,53 @@ namespace EgourmetAPI.Repository
                         CAST(pro_preco_venda AS DOUBLE PRECISION) as pro_preco_venda,
                         pro_imagem1,
                         pro_barra,
-                        pro_descricao from produto where emp_codigo=@empresa and grup_codigo=@grupo";
+                        pro_descricao,
+                        pro_Observacao
+                        from produto 
+                        where emp_codigo=@empresa and grup_codigo=@grupo";
 
             var connection = new FbConnection(conexao);
 
             try
             {
                 return connection.Query<Produto>(query, new { empresa = empCodigo, grupo=grupoCodigo }).ToList();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+
+        }
+
+        public IEnumerable<Produto> GetPorNome(int empCodigo, String nomeProd)
+        {
+            string query =
+                        $@" select  
+                        Pro_Codigo,
+                        emp_codigo, 
+                        for_codigo,  
+                        unid_codigo,  
+                        grup_codigo,  
+                        CAST(pro_preco_venda AS DOUBLE PRECISION) as pro_preco_venda,
+                        pro_imagem1,
+                        pro_barra,
+                        pro_descricao,
+                        pro_Observacao
+                        from produto 
+                        where emp_codigo=@empresa and pro_descricao like @nome";
+
+            var connection = new FbConnection(conexao);
+
+            try
+            {
+                return connection.Query<Produto>(query, new { empresa = empCodigo, nome = '%'+nomeProd.ToUpper()+'%' }).ToList();
 
             }
             catch (Exception ex)

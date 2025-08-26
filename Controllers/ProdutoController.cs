@@ -81,5 +81,12 @@ namespace IzyLav.Controllers
         }
 
 
+        [Route("Nome/{empCodigo}/{nomeProd}")]
+        [HttpGet]
+        public ActionResult<IEnumerable<Produto>> GetPorNome(int empCodigo, String nomeProd)
+        {
+            return Ok(_produtoService.GetPorNome(empCodigo, nomeProd));
+        }
+
     }
 }

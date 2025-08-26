@@ -8,6 +8,7 @@ namespace IzyLav.Services.Interface
         public IEnumerable<Orcamentos> GetAllAsync(int empresa);
         public Orcamentos GetById(int empresa, int orcamentoid, string ano);
         public void Remove(int emp_Codigo, int orc_Codigo, string ano);
+        public String Add(Orcamentos obj);
 
     }
 }

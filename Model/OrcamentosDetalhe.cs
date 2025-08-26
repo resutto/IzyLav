@@ -42,6 +42,6 @@
         public int Qdecasas { get; set; }
         public DateTime Data_Impressao_Avulso { get; set; }
         public int Idmotivodeson { get; set; }
-        public int Vicmsdeson { get; set; }
+        public float Vicmsdeson { get; set; }
     }
 }

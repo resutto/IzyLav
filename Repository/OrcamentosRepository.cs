@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using egourmetAPI.Model;
+using egourmetAPI.Repository.Interface;
 using EgourmetAPI.Model;
 using EgourmetAPI.Repository.Interface;
 using FirebirdSql.Data.FirebirdClient;
@@ -21,9 +22,15 @@ namespace EgourmetAPI.Repository
             _configuration = configuration;
         }
 
-        public void Add(Orcamentos obj)
+        public String Add(Orcamentos obj)
         {
 
+            //string ipAddress = Request.Headers["X-Forwarded-For"].FirstOrDefault();
+
+            //if (string.IsNullOrEmpty(ipAddress))
+            //{
+            //string ipAddress = HttpContext.Connection.RemoteIpAddress.ToString();
+            //}
             string query = $@"insert into orcamentos(  
                                       Emp_Codigo,
                                       Orc_Codigo,
@@ -185,7 +192,9 @@ namespace EgourmetAPI.Repository
 
             var connection = new FbConnection(conexao);
             IdLanc que1 = Datpai.GerarIdLanc(obj.Emp_Codigo, connection,
-                                 $@"select max(orc_codigo)+1 as idlanc from orcamentos where emp_Codigo=@empresa and orc_ano= (select substring(date 'NOW'  from 1 for 4 ) from rdb$database) ");
+                                 $@"select max(orc_codigo)+1 as idlanc from orcamentos where 
+                                    emp_Codigo=@empresa and 
+                                       orc_ano= (select substring(date 'NOW'  from 1 for 4 ) from rdb$database) ");
 
             try
             {
@@ -218,7 +227,7 @@ namespace EgourmetAPI.Repository
                     uf=obj.Entreg_Uf,
                     fone1=obj.Entreg_Fone1,
                     fone2=obj.Entreg_Fone2,
-                    cep=obj.ENTREG_Cep,
+                    cep=obj.Entreg_Cep,
                     contato=obj.Entreg_Contato,
                     local=obj.Entreg_Local,
                     compl=obj.Entreg_Compl,
@@ -227,6 +236,114 @@ namespace EgourmetAPI.Repository
                     pccriou=obj.Pc_Criou
 
                 });
+
+
+                String insertDetalhe = $@"insert into orcamentos_Detalhe (  
+                                  Emp_Codigo,
+                                  Orc_Codigo,
+                                  Detorc_Codigo,
+                                  Cli_Codigo,
+                                  Orc_Ano,
+                                  Unid_Codigo,
+                                  Pro_Codigo,
+                                  Detorc_Qtde,
+                                  Detorc_Custotot,
+                                  Detorc_Custo,
+                                  Detorc_Observacao,
+                                  Infadicional,
+                                  Fun_Codigo,
+                                  Data_Cadastro,
+                                  Totaproxtributoitem,
+                                  Dep_Codigo,
+                                  Cst_Icms,
+                                  Perc_Icms,
+                                  Cst_Ipi,
+                                  Perc_Ipi,
+                                  Cst_Pis,
+                                  Perc_Pis,
+                                  Cst_Cofins,
+                                  Perc_Cofins,
+                                  Detorc_Desconto,
+                                  Pc_Criou,
+                                  Qdecasas,
+                                  Idmotivodeson,
+                                  Vicmsdeson, seqproducao)
+                                values(
+                                  @empresa,
+                                  @orccodigo,
+                                  @detorccodigo,
+                                  @cliente,
+                                  @ano,
+                                  @unidade,
+                                  @produto,
+                                  @qtde,
+                                  @custotot,
+                                  @custo,
+                                  @observacao,
+                                  @infadicional,
+                                  @funcionario,
+                                  current_date,
+                                  @Totaproxtributoitem,
+                                  @deposito,
+                                  @csticms,
+                                  @percicms,
+                                  @cstipi,
+                                  @percipi,
+                                  @cstpis,
+                                  @percpis,
+                                  @cstcofins,
+                                  @perccofins,
+                                  @detorcdesconto,
+                                  @pccriou,
+                                  @qdecasas,
+                                  @idmotivodeson,
+                                  @vicmsdeson,@seqproducao
+                                )";
+
+                int sequencial = 1;
+                float total = 0;
+                foreach (var item in obj.detalhes)
+                {
+                    total = item.Detorc_Qtde * item.Detorc_Custo;
+                    connection.Execute(insertDetalhe, new
+                    {
+                        empresa = obj.Emp_Codigo,
+                        orccodigo = que1.idLanc,
+                        detorccodigo = sequencial,
+                        cliente = obj.Cli_Codigo,
+                        ano = item.ORC_Ano,
+                        unidade = item.Unid_Codigo,
+                        produto = item.Pro_Codigo,
+                        qtde = item.Detorc_Qtde,
+                        custotot = total,
+                        custo = item.Detorc_Custo,
+                        observacao = item.Detorc_Observacao,
+                        infadicional = item.Infadicional,
+                        funcionario = item.Fun_Codigo,
+                        totaproxtributoitem = item.Totaproxtributoitem,
+                        deposito = item.Dep_Codigo,
+                        csticms = item.Cst_Icms,
+                        percicms = item.Perc_Icms,
+                        cstipi = item.Cst_Ipi,
+                        percipi = item.Perc_Ipi,
+                        cstpis = item.Cst_Pis,
+                        percpis = item.Perc_Pis,
+                        cstcofins = item.Cst_Cofins,
+                        perccofins = item.Perc_Cofins,
+                        detorcdesconto = item.Detorc_Desconto,
+                        pccriou = item.Pc_Criou,
+                        qdecasas = item.Qdecasas,
+                        idmotivodeson = item.Idmotivodeson,
+                        vicmsdeson = item.Vicmsdeson,
+                        seqproducao=item.Seqproducao
+                    });
+                    sequencial = sequencial + 1;
+                }
+
+                string ano = "";
+                DateTime dataHoraAtual = DateTime.Now;
+                ano = dataHoraAtual.ToString().Substring(6, 4);                
+                return "Pedido ["+ que1.idLanc.ToString() +"/"+ obj.Orc_Ano+"]";
             }
             catch (Exception e)
             {
@@ -562,7 +679,7 @@ namespace EgourmetAPI.Repository
                     uf = obj.Entreg_Uf,
                     fone1 = obj.Entreg_Fone1,
                     fone2 = obj.Entreg_Fone2,
-                    cep = obj.ENTREG_Cep,
+                    cep = obj.Entreg_Cep,
                     contato = obj.Entreg_Contato,
                     local = obj.Entreg_Local,
                     compl = obj.Entreg_Compl,
@@ -581,6 +698,11 @@ namespace EgourmetAPI.Repository
             {
                 connection.Close();
             }
+        }
+
+        void IRepositoryBase<Orcamentos>.Add(Orcamentos obj)
+        {
+            throw new NotImplementedException();
         }
     }
 }

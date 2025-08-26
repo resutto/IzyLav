@@ -9,5 +9,7 @@ namespace IzyLav.Services.Interface
         public IEnumerable<Produto> GetAllAsync(int empresa);
         public Produto GetById(string produto, int empresa);
         public IEnumerable<Produto> GetPorGrupo(int empCodigo, int grupoCodigo);
+        public IEnumerable<Produto> GetPorNome(int empCodigo, String nomeProd);
+
     }
 }

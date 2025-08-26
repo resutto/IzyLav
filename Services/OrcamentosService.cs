@@ -1,4 +1,5 @@
-﻿using EgourmetAPI.Model;
+﻿using egourmetAPI.Service.Interface;
+using EgourmetAPI.Model;
 using EgourmetAPI.Repository.Interface;
 using IzyLav.Services.Interface;
 
@@ -10,9 +11,9 @@ namespace IzyLav.Services
         public OrcamentosService(IOrcamentosRepository repositorio) {
             _rep = repositorio;
         }
-        public void Add(Orcamentos objOrcamento)
+        public String Add(Orcamentos objOrcamento)
         {
-            _rep.Add(objOrcamento);
+            return _rep.Add(objOrcamento);
         }
 
         public IEnumerable<Orcamentos> GetAllAsync(int empresa)
@@ -48,6 +49,11 @@ namespace IzyLav.Services
         public void Update(Orcamentos objOrcamento)
         {
             _rep.Update(objOrcamento);
+        }
+
+        void IServiceBase<Orcamentos>.Add(Orcamentos obj)
+        {
+            throw new NotImplementedException();
         }
     }
 }

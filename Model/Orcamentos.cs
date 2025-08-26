@@ -47,7 +47,7 @@
         public string Entreg_Uf { get; set; }
         public string Entreg_Fone1 { get; set; }
         public string Entreg_Fone2 { get; set; }
-        public string ENTREG_Cep { get; set; }
+        public string Entreg_Cep { get; set; }
         public string Entreg_Ref { get; set; }
         public string Entreg_Contato { get; set; }
         public string Entreg_Local { get; set; }
@@ -87,6 +87,6 @@
         public string Pc_Encerrou { get; set; }
         public string Nfe_Tp_Doc { get; set; }
         public string Nfe_Doc { get; set; }
-
+        public ICollection<OrcamentosDetalhe> detalhes { get; set; } //= new List<OrcamentosDetalhe>();
     }
 }

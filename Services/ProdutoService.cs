@@ -57,6 +57,11 @@ namespace IzyLav.Services
         {
             return _repository.GetPorGrupo(empCodigo, grupoCodigo);
         }
+        public IEnumerable<Produto> GetPorNome(int empCodigo, String nomeProd)
+        {
+            return _repository.GetPorNome(empCodigo, nomeProd);
+
+        }
 
     }
 }

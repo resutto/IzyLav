@@ -5012,6 +5012,63 @@
         }
       }
     },
+    "/api/Produto/Nome/{empCodigo}/{nomeProd}": {
+      "get": {
+        "tags": [
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "empCodigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "nomeProd",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Produto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Produto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Produto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/SaldoProduto/{empresa}/{produto}": {
       "get": {
         "tags": [
@@ -7660,7 +7717,7 @@
             "type": "string",
             "nullable": true
           },
-          "entreG_Cep": {
+          "entreg_Cep": {
             "type": "string",
             "nullable": true
           },
@@ -7818,6 +7875,13 @@
           },
           "nfe_Doc": {
             "type": "string",
+            "nullable": true
+          },
+          "detalhes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrcamentosDetalhe"
+            },
             "nullable": true
           }
         },
@@ -7987,8 +8051,8 @@
             "format": "int32"
           },
           "vicmsdeson": {
-            "type": "integer",
-            "format": "int32"
+            "type": "number",
+            "format": "float"
           }
         },
         "additionalProperties": false

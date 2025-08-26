@@ -33,8 +33,8 @@ namespace IzyLav.Controllers
         {
             try
             {
-                _servico.Add(orc);
-                return Ok("Pedido Adicionado Com Sucesso!");
+                String resultado=_servico.Add(orc);
+                return Ok(resultado+" Adicionado Com Sucesso!");
             }
             catch (Exception ex)
             {

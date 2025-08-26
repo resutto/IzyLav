@@ -13,5 +13,7 @@ namespace EgourmetAPI.Repository.Interface
         public IEnumerable<Cliente> GetAllClientesPorEmpresa(int empCodigo);
         public IEnumerable<Produto> GetAll(int empCodigo);
         public IEnumerable<Produto> GetPorGrupo(int empCodigo, int grupoCodigo);
+        public IEnumerable<Produto> GetPorNome(int empCodigo, String nomeProd);
+
     }
 }
