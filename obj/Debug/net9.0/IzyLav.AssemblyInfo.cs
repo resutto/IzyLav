@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IzyLav")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1562cdac0f7234049b4d161bcf0bd0f4ab66f274")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b6511d850c0b19b673643576273ccfa2a99e7d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("IzyLav")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IzyLav")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

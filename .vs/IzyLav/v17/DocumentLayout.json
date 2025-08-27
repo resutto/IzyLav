@@ -193,8 +193,7 @@
               "RelativeToolTip": "Model\\OrcamentosDetalhe.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T23:50:39.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T23:50:39.138Z"
             },
             {
               "$type": "Document",
@@ -206,8 +205,7 @@
               "RelativeToolTip": "Model\\Orcamentos.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAAowFkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T21:51:57.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T21:51:57.97Z"
             },
             {
               "$type": "Document",
@@ -231,8 +229,7 @@
               "RelativeToolTip": "Repository\\Interface\\IOrcamentosRepository.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-23T17:54:03.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-23T17:54:03.894Z"
             },
             {
               "$type": "Document",
@@ -242,7 +239,7 @@
               "RelativeDocumentMoniker": "Repository\\OrcamentosRepository.cs",
               "ToolTip": "C:\\src\\IzyLav\\Repository\\OrcamentosRepository.cs",
               "RelativeToolTip": "Repository\\OrcamentosRepository.cs",
-              "ViewState": "AgIAAP8AAAAAAAAAAAAAAP8AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAEYBAAAAAAAAAAAgwFUBAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-23T17:20:52.877Z",
               "EditorCaption": ""
@@ -257,8 +254,7 @@
               "RelativeToolTip": "Controllers\\OrcamentosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-23T16:54:41.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-23T16:54:41.583Z"
             },
             {
               "$type": "Document",
@@ -270,8 +266,7 @@
               "RelativeToolTip": "Repository\\OrcamentosDetalheRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T02:35:20.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-15T02:35:20.53Z"
             },
             {
               "$type": "Document",

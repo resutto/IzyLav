@@ -25,12 +25,6 @@ namespace EgourmetAPI.Repository
         public String Add(Orcamentos obj)
         {
 
-            //string ipAddress = Request.Headers["X-Forwarded-For"].FirstOrDefault();
-
-            //if (string.IsNullOrEmpty(ipAddress))
-            //{
-            //string ipAddress = HttpContext.Connection.RemoteIpAddress.ToString();
-            //}
             string query = $@"insert into orcamentos(  
                                       Emp_Codigo,
                                       Orc_Codigo,
@@ -108,7 +102,7 @@ namespace EgourmetAPI.Repository
                                       Via,
                                       Pc_Encerrou,
                                       Nfe_Tp_Doc,
-                                      Nfe_Doc)
+                                      Nfe_Doc, dtsinc)
 
                                     values(
                                       @empresa,
@@ -187,8 +181,7 @@ namespace EgourmetAPI.Repository
                                       0,
                                       null,
                                       null,
-                                      null
-                                    )";
+                                      null,CURRENT_DATE)";
 
             var connection = new FbConnection(conexao);
             IdLanc que1 = Datpai.GerarIdLanc(obj.Emp_Codigo, connection,
@@ -301,10 +294,12 @@ namespace EgourmetAPI.Repository
                                 )";
 
                 int sequencial = 1;
-                float total = 0;
+                float total = 0; 
+                float totalPedido = 0;
                 foreach (var item in obj.detalhes)
                 {
                     total = item.Detorc_Qtde * item.Detorc_Custo;
+                    totalPedido = totalPedido + total;
                     connection.Execute(insertDetalhe, new
                     {
                         empresa = obj.Emp_Codigo,
@@ -342,7 +337,13 @@ namespace EgourmetAPI.Repository
 
                 string ano = "";
                 DateTime dataHoraAtual = DateTime.Now;
-                ano = dataHoraAtual.ToString().Substring(6, 4);                
+                ano = dataHoraAtual.ToString().Substring(6, 4);
+                string hora1= dataHoraAtual.ToString().Substring(11, 8);
+                //Console.WriteLine(dataHoraAtual);
+                connection.Execute("update orcamentos set ORC_SUBTOTAL=@total, ORC_TOTAL=@total, ORC_TOTPROD=@total, orc_data_hora=@hora " +
+                    "where orc_codigo=@pedido and orc_ano=@anoPedido and emp_codigo=@empresa", 
+                    new { total=totalPedido, pedido=que1.idLanc, anoPedido=ano, hora=hora1, empresa=obj.Emp_Codigo});
+
                 return "Pedido ["+ que1.idLanc.ToString() +"/"+ obj.Orc_Ano+"]";
             }
             catch (Exception e)
