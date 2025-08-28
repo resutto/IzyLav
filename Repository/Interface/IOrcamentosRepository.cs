@@ -10,6 +10,6 @@ namespace EgourmetAPI.Repository.Interface
         public Orcamentos GetById(int empresa, int orcamentoid, string ano);
         public void Remove(int empresa, int orcamentoid, string ano);
         public String Add(Orcamentos obj);
-
+        public IEnumerable<Orcamentos> GetAllFromClient(int empresa, int clienteCodigo);
     }
 }

@@ -4230,6 +4230,64 @@
         }
       }
     },
+    "/api/Orcamentos/pedidos/{empresa}/{ClienteCodigo}": {
+      "get": {
+        "tags": [
+          "Orcamentos"
+        ],
+        "parameters": [
+          {
+            "name": "empresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "ClienteCodigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Orcamentos"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Orcamentos"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Orcamentos"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Orcamentos/{empresa}/{orcCodigo}/{ano}": {
       "get": {
         "tags": [

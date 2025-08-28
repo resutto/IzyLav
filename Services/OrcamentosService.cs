@@ -55,5 +55,12 @@ namespace IzyLav.Services
         {
             throw new NotImplementedException();
         }
+
+        public IEnumerable<Orcamentos> GetAllFromClient(int empresa, int clienteCodigo)
+        {
+            return _rep.GetAllFromClient(empresa,clienteCodigo);
+        }
+
+
     }
 }

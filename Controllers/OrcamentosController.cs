@@ -21,6 +21,14 @@ namespace IzyLav.Controllers
             return Ok(_servico.GetAllAsync(empresa));
         }
 
+        [Route("pedidos/{empresa}/{ClienteCodigo}")]
+        [HttpGet]
+        public ActionResult<IEnumerable<Orcamentos>> GetAllFromClient(int empresa, int ClienteCodigo)
+        {
+            return Ok(_servico.GetAllFromClient(empresa,ClienteCodigo));
+        }
+        
+
         [Route("{empresa}/{orcCodigo}/{ano}")]
         [HttpGet]
         public ActionResult<Orcamentos> GetById(int empresa, int orcCodigo, string ano)

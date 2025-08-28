@@ -705,5 +705,105 @@ namespace EgourmetAPI.Repository
         {
             throw new NotImplementedException();
         }
+
+        public IEnumerable<Orcamentos> GetAllFromClient(int empresa, int clienteCodigo)
+        {
+            string query = $@" select Emp_Codigo,
+                                      Orc_Codigo,
+                                      Orc_Ano,
+                                      Conta_Codigo,
+                                      Condic_Codigo,
+                                      Trans_Codigo,
+                                      Orc_Data,
+                                      Fun_Codigo,
+                                      Cli_Codigo,
+                                      Orc_Data_Confirmacao,
+                                      Orc_Subtotal,
+                                      Orc_Observacoes,
+                                      Orc_Total,
+                                      Orc_Desconto,
+                                      Orc_Totitems,
+                                      Orc_Qdeparcelas,
+                                      Orc_Notafical,
+                                      Orc_Imposto,
+                                      Cfop,
+                                      Cancelado,
+                                      Formpgto_Codigo,
+                                      Mov_Codigo,
+                                      Preorc_Codigo,
+                                      Orc_Dt_Cancela,
+                                      Orc_Data_Emissao,
+                                      Orc_Data_Saida,
+                                      Orc_Vlriss,
+                                      Orc_Vlrpis,
+                                      Orc_Vlrcofins,
+                                      Orc_VlrIrrf,
+                                      Orc_Vlrinss,
+                                      Orc_Vlrcsll,
+                                      Entreg_Endereco,
+                                      Entreg_Numero,
+                                      Entreg_Bairro,
+                                      Entreg_Cidade,
+                                      Entreg_Uf,
+                                      Entreg_Fone1,
+                                      Entreg_Fone2,
+                                      Entreg_Cep,
+                                      Entreg_Contato,
+                                      Entreg_Local,
+                                      Entreg_Compl,
+                                      Entreg_Referencia,
+                                      Condic_Obs,
+                                      Liberado,
+                                      Dtentrega,
+                                      Dtcancelado,
+                                      Hrcancelado,
+                                      Orc_Notafiscal,
+                                      Orc_Nfserie,
+                                      Nfse,
+                                      File_Xml_Nfe,
+                                      Dt_Envio_Xml,
+                                      File_Xml_Cancelado,
+                                      Dt_Cancelamento_Nfe,
+                                      Hora_Abertura,
+                                      Orc_Data_Hora,
+                                      Orc_Fim_Hora,
+                                      Seq,
+                                      Perc_Comissao,
+                                      Vlr_Comissao,
+                                      Vlr_Acrescimo,
+                                      Perc_Desconto,
+                                      Mesa,
+                                      Orc_Hrultimo_Atendimento,
+                                      Numero_Nfce,
+                                      Serie_Nfce,
+                                      Orc_Notafiscal_Serie,
+                                      Totaproxtributo,
+                                      inscricaoestadual,
+                                      emissorinscricaoestadual,
+                                      Pc_Criou,
+                                      Via,
+                                      Pc_Encerrou,
+                                      Nfe_Tp_Doc,
+                                      Nfe_Doc 
+                                from orcamentos
+                                where emp_codigo= @empresa and cli_codigo=@cliente";
+
+            var connection = new FbConnection(conexao);
+
+            try
+            {
+                return connection.Query<Orcamentos>(query, new
+                { empresa = empresa, cliente=clienteCodigo }).ToList();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+        }
     }
 }

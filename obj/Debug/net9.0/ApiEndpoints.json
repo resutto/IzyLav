@@ -2618,6 +2618,37 @@
     ]
   },
   {
+    "ContainingType": "IzyLav.Controllers.OrcamentosController",
+    "Method": "GetAllFromClient",
+    "RelativePath": "api/Orcamentos/pedidos/{empresa}/{ClienteCodigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empresa",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ClienteCodigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EgourmetAPI.Model.Orcamentos, IzyLav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "IzyLav.Controllers.OrcamentosDetalheController",
     "Method": "Add",
     "RelativePath": "api/OrcamentosDetalhe",
