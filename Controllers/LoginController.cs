@@ -21,13 +21,14 @@ namespace IzyLav.Controllers
 
         [Route("{usuario}/{senha}")]
         [HttpGet]
-        public ActionResult<string> Login(string usuario, string senha)
+        public ActionResult<Usuario> Login(string usuario, string senha)
         {
             Usuario usuarioResult=_service.Login(usuario, Datpai.HashMD5(senha));
             if (usuarioResult != null) {
                 string sbearer = _tokenService.GenerateToken(usuarioResult);
                 if (sbearer=="") return Unauthorized();
-                return Ok(sbearer);
+                usuarioResult.Token = sbearer;
+                return Ok(usuarioResult);
             }
             else return NotFound();
         }

@@ -1853,7 +1853,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "EgourmetAPI.Model.Usuario",
         "MediaTypes": [
           "text/plain",
           "application/json",

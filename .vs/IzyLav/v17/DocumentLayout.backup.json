@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\src\\IzyLav\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\repository\\orcamentosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:repository\\orcamentosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\model\\orcamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:model\\orcamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\services\\orcamentosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,10 +51,6 @@
       "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:model\\orcamentosdetalhe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\model\\orcamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:model\\orcamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\repository\\orcamentosdetalherepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:repository\\orcamentosdetalherepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -44,10 +60,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\repository\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:repository\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\services\\interface\\iaplicacoesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,10 +106,6 @@
       "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -112,10 +120,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\services\\condicpagtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:services\\condicpagtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{961D3932-E812-4303-9FEB-B1C27AD86864}|IzyLav.csproj|c:\\src\\izylav\\data\\usuarioaplicacoesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -177,7 +181,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -185,58 +189,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Orcamentos.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Model\\Orcamentos.cs",
-              "RelativeDocumentMoniker": "Model\\Orcamentos.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Model\\Orcamentos.cs",
-              "RelativeToolTip": "Model\\Orcamentos.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAowFkAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T21:51:57.97Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IOrcamentosService.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Services\\Interface\\IOrcamentosService.cs",
-              "RelativeDocumentMoniker": "Services\\Interface\\IOrcamentosService.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Services\\Interface\\IOrcamentosService.cs",
-              "RelativeToolTip": "Services\\Interface\\IOrcamentosService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-23T17:57:37.433Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IOrcamentosRepository.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\Interface\\IOrcamentosRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Interface\\IOrcamentosRepository.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Repository\\Interface\\IOrcamentosRepository.cs",
-              "RelativeToolTip": "Repository\\Interface\\IOrcamentosRepository.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-23T17:54:03.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "OrcamentosRepository.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\OrcamentosRepository.cs",
               "RelativeDocumentMoniker": "Repository\\OrcamentosRepository.cs",
               "ToolTip": "C:\\src\\IzyLav\\Repository\\OrcamentosRepository.cs",
               "RelativeToolTip": "Repository\\OrcamentosRepository.cs",
-              "ViewState": "AgIAALsCAAAAAAAAAAAAAMQCAABWAAAAAAAAAA==",
+              "ViewState": "AgIAABEDAAAAAAAAAADwvxkDAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-23T17:20:52.877Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "OrcamentosController.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\OrcamentosController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrcamentosController.cs",
@@ -244,12 +210,11 @@
               "RelativeToolTip": "Controllers\\OrcamentosController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAAABcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-23T16:54:41.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-23T16:54:41.583Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "OrcamentosService.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Services\\OrcamentosService.cs",
               "RelativeDocumentMoniker": "Services\\OrcamentosService.cs",
@@ -257,12 +222,98 @@
               "RelativeToolTip": "Services\\OrcamentosService.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAqwDoAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-23T17:58:18.201Z",
+              "WhenOpened": "2025-08-23T17:58:18.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\src\\IzyLav\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\src\\IzyLav\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAgwLgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T05:32:03.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\src\\IzyLav\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwB0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T02:59:31.018Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginRepository.cs",
+              "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\LoginRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\LoginRepository.cs",
+              "ToolTip": "C:\\src\\IzyLav\\Repository\\LoginRepository.cs",
+              "RelativeToolTip": "Repository\\LoginRepository.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T03:09:53.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\src\\IzyLav\\Model\\Usuario.cs",
+              "RelativeDocumentMoniker": "Model\\Usuario.cs",
+              "ToolTip": "C:\\src\\IzyLav\\Model\\Usuario.cs",
+              "RelativeToolTip": "Model\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T03:40:05.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IOrcamentosRepository.cs",
+              "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\Interface\\IOrcamentosRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Interface\\IOrcamentosRepository.cs",
+              "ToolTip": "C:\\src\\IzyLav\\Repository\\Interface\\IOrcamentosRepository.cs",
+              "RelativeToolTip": "Repository\\Interface\\IOrcamentosRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T17:54:03.894Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Orcamentos.cs",
+              "DocumentMoniker": "C:\\src\\IzyLav\\Model\\Orcamentos.cs",
+              "RelativeDocumentMoniker": "Model\\Orcamentos.cs",
+              "ToolTip": "C:\\src\\IzyLav\\Model\\Orcamentos.cs",
+              "RelativeToolTip": "Model\\Orcamentos.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAA7wFEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T21:51:57.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IOrcamentosService.cs",
+              "DocumentMoniker": "C:\\src\\IzyLav\\Services\\Interface\\IOrcamentosService.cs",
+              "RelativeDocumentMoniker": "Services\\Interface\\IOrcamentosService.cs",
+              "ToolTip": "C:\\src\\IzyLav\\Services\\Interface\\IOrcamentosService.cs",
+              "RelativeToolTip": "Services\\Interface\\IOrcamentosService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T17:57:37.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ProdutoService.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Services\\ProdutoService.cs",
               "RelativeDocumentMoniker": "Services\\ProdutoService.cs",
@@ -270,12 +321,11 @@
               "RelativeToolTip": "Services\\ProdutoService.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAqwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T20:38:25.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T20:38:25.22Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "OrcamentosDetalhe.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Model\\OrcamentosDetalhe.cs",
               "RelativeDocumentMoniker": "Model\\OrcamentosDetalhe.cs",
@@ -287,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "OrcamentosDetalheRepository.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\OrcamentosDetalheRepository.cs",
               "RelativeDocumentMoniker": "Repository\\OrcamentosDetalheRepository.cs",
@@ -299,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Orcamentos.cs",
               "DocumentMoniker": "C:\\Users\\Dell\\AppData\\Local\\SourceServer\\b89e6defd2cc04ef8027b4f70199b15c93b7e251284c51df870e092e5e9c6d25\\Model\\Orcamentos.cs",
               "RelativeDocumentMoniker": "..\\..\\Users\\Dell\\AppData\\Local\\SourceServer\\b89e6defd2cc04ef8027b4f70199b15c93b7e251284c51df870e092e5e9c6d25\\Model\\Orcamentos.cs",
@@ -311,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "ProdutoShowRoom.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Model\\ProdutoShowRoom.cs",
               "RelativeDocumentMoniker": "Model\\ProdutoShowRoom.cs",
@@ -323,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "ProdutoRepository.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\ProdutoRepository.cs",
               "RelativeDocumentMoniker": "Repository\\ProdutoRepository.cs",
@@ -335,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "IProdutoService.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Services\\Interface\\IProdutoService.cs",
               "RelativeDocumentMoniker": "Services\\Interface\\IProdutoService.cs",
@@ -347,19 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAK8AAAAAAAAAAAAtwLUAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T05:32:03.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "FormaPagtoController.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\FormaPagtoController.cs",
               "RelativeDocumentMoniker": "Controllers\\FormaPagtoController.cs",
@@ -371,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "IAplicacoesService.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Services\\Interface\\IAplicacoesService.cs",
               "RelativeDocumentMoniker": "Services\\Interface\\IAplicacoesService.cs",
@@ -383,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "IProdutoRepository.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\Interface\\IProdutoRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Interface\\IProdutoRepository.cs",
@@ -395,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "ProdutoController.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\ProdutoController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProdutoController.cs",
@@ -407,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Produto.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Model\\Produto.cs",
               "RelativeDocumentMoniker": "Model\\Produto.cs",
@@ -419,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\src\\IzyLav\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -431,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "CondicPagtoController.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\CondicPagtoController.cs",
               "RelativeDocumentMoniker": "Controllers\\CondicPagtoController.cs",
@@ -443,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "CondicPagtoRepository.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\CondicPagtoRepository.cs",
               "RelativeDocumentMoniker": "Repository\\CondicPagtoRepository.cs",
@@ -455,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "ClienteService.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Services\\ClienteService.cs",
               "RelativeDocumentMoniker": "Services\\ClienteService.cs",
@@ -467,19 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "LoginRepository.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\LoginRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\LoginRepository.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Repository\\LoginRepository.cs",
-              "RelativeToolTip": "Repository\\LoginRepository.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAtwB4AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:09:53.844Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "UsuarioFuncionarioController.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\UsuarioFuncionarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuarioFuncionarioController.cs",
@@ -491,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "CondicPagtoService.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Services\\CondicPagtoService.cs",
               "RelativeDocumentMoniker": "Services\\CondicPagtoService.cs",
@@ -503,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\src\\IzyLav\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -515,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "ILoginRepository.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\Interface\\ILoginRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Interface\\ILoginRepository.cs",
@@ -527,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "LoginService.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Services\\LoginService.cs",
               "RelativeDocumentMoniker": "Services\\LoginService.cs",
@@ -539,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "Datpai.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\common\\Datpai.cs",
               "RelativeDocumentMoniker": "common\\Datpai.cs",
@@ -551,19 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
-              "ToolTip": "C:\\src\\IzyLav\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAkwCQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:59:31.018Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "UsuarioAplicacoesDTO.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Data\\UsuarioAplicacoesDTO.cs",
               "RelativeDocumentMoniker": "Data\\UsuarioAplicacoesDTO.cs",
@@ -575,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "ILoginService.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Services\\Interface\\ILoginService.cs",
               "RelativeDocumentMoniker": "Services\\Interface\\ILoginService.cs",
@@ -587,7 +601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "UsuarioAplicRepository.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\UsuarioAplicRepository.cs",
               "RelativeDocumentMoniker": "Repository\\UsuarioAplicRepository.cs",
@@ -599,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "MaquinaTipoController.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\MaquinaTipoController.cs",
               "RelativeDocumentMoniker": "Controllers\\MaquinaTipoController.cs",
@@ -611,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "MaquinasExecucaoController.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\MaquinasExecucaoController.cs",
               "RelativeDocumentMoniker": "Controllers\\MaquinasExecucaoController.cs",
@@ -623,7 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "MaquinasEtapasController.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\MaquinasEtapasController.cs",
               "RelativeDocumentMoniker": "Controllers\\MaquinasEtapasController.cs",
@@ -635,7 +649,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "MaquinasController.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\MaquinasController.cs",
               "RelativeDocumentMoniker": "Controllers\\MaquinasController.cs",
@@ -647,7 +661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
@@ -659,7 +673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "AplicacoesController.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\AplicacoesController.cs",
               "RelativeDocumentMoniker": "Controllers\\AplicacoesController.cs",
@@ -671,7 +685,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "CargoController.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Controllers\\CargoController.cs",
               "RelativeDocumentMoniker": "Controllers\\CargoController.cs",
@@ -683,7 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "UsuarioRepository.cs",
               "DocumentMoniker": "C:\\src\\IzyLav\\Repository\\UsuarioRepository.cs",
               "RelativeDocumentMoniker": "Repository\\UsuarioRepository.cs",

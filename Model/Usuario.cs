@@ -14,5 +14,6 @@ namespace EgourmetAPI.Model
         public string Usuarioweb { get; set; }
         public string Ususenharapida { get; set; }
         public string Grupo { get; set; } //Role
+        public string Token { get; set; }
     }
 }
